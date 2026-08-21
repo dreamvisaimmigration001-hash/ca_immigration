@@ -24,8 +24,8 @@ export default function MyCICDashboard() {
     {
       id: 'MSG-101',
       subject: 'Original Passport Request',
-      dateSent: 'December 20, 2024',
-      dateRead: 'December 21, 2024',
+      dateSent: 'August 14, 2026',
+      dateRead: 'August 14, 2026',
       sender: 'Immigration, Refugees and Citizenship Canada',
       content: `Dear BIKASH SINGH GAJMER,\n\nThis is an Information Letter regarding your ongoing application (V353410701).\n\nPlease note that your application is currently under final administrative processing. No further action is required from you at this time.\n\nThank you,\nImmigration, Refugees and Citizenship Canada`,
       pdfUrl: '/BIKASH SINGH GAJMER PPR.pdf',
