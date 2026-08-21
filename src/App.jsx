@@ -28,7 +28,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+          <Route index element={<Account />} />
           <Route path="jobs" element={<Jobs />} />
           <Route
             path="immigration-citizenship"
@@ -54,10 +54,10 @@ function App() {
             path="immigration-refugees-citizenship/services/application/ircc-accounts"
             element={<IRCCAccount />}
           />
-          <Route
+          {/* <Route
             path="immigration-refugees-citizenship/services/application/account"
             element={<Account />}
-          />
+          /> */}
           <Route path="travel" element={<Travel />} />
           <Route path="business" element={<Business />} />
           <Route path="benefits" element={<Benefits />} />
