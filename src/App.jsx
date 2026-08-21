@@ -14,6 +14,8 @@ import CheckProcessingTimes from './pages/CheckProcessingTimes';
 import IRCCAccount from './pages/IRCCAccount';
 import Account from './pages/Account';
 import GCKeyLogin from './pages/GCKeyLogin';
+import GCKeyForgotUsername from './pages/GCKeyForgotUsername';
+import GCKeyLayout from './components/GCKeyLayout';
 
 import Taxes from './pages/Taxes';
 import Environment from './pages/Environment';
@@ -42,7 +44,11 @@ function App() {
           <Route path="services/environment" element={<Environment />} />
           <Route path="environment" element={<Environment />} />
         </Route>
-        <Route path="/j/eng/l" element={<GCKeyLogin />} />
+        <Route element={<GCKeyLayout />}>
+          <Route path="/j/eng/l" element={<GCKeyLogin />} />
+          <Route path="/fu" element={<GCKeyForgotUsername />} />
+          <Route path="/j/eng/fu" element={<GCKeyForgotUsername />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
