@@ -185,10 +185,10 @@ export default function MyCICDashboard() {
                         <strong>Biometrics Number:</strong> 0001098481811919
                       </li>
                       <li>
-                        <strong>Date of Biometrics Enrolment:</strong> June 19, 2024
+                        <strong>Date of Biometrics Enrolment:</strong> March 24, 2026
                       </li>
                       <li>
-                        <strong>Expiry Date:</strong> June 19, 2034
+                        <strong>Expiry Date:</strong> TBD
                       </li>
                     </ul>
                   </div>
