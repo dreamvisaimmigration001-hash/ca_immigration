@@ -18,7 +18,7 @@ export default function GCKeyLogin() {
     }
     // Proceed if valid...
     setShowError(false);
-    navigate('/immigration-refugees-citizenship/services/application/account');
+    navigate('/mycic/home');
   };
 
   const handleClear = () => {
