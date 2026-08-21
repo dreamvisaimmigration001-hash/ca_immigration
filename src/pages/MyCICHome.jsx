@@ -142,7 +142,7 @@ export default function MyCICHome() {
                   marginBottom: "10px",
                 }}
               >
-                ChatWithOlu Webinar's account
+                BIKASH SINGH GAJMER's account
               </h1>
               <div
                 style={{
