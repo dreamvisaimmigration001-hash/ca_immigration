@@ -159,7 +159,7 @@ export default function Application() {
                 <ChevronRight size={16} className="align-self-center mrgn-lft-sm" aria-hidden="true" />
               </div>
               <div className="d-flex brdr-bttm mrgn-tp-md position-relative">
-                <p className="mrgn-tp-0 mrgn-bttm-0 full-width"><Link to="/immigration-refugees-citizenship/services/immigration-citizenship-representative" className="no-undrln stretched-link full-width">Apply with the help of a representative</Link></p>
+                <p className="mrgn-tp-0 mrgn-bttm-0 full-width"><Link to="/immigration-refugees-citizenship/immigration-citizenship-representative" className="no-undrln stretched-link full-width">Apply with the help of a representative</Link></p>
                 <ChevronRight size={16} className="align-self-center mrgn-lft-sm" aria-hidden="true" />
               </div>
             </div>

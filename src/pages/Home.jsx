@@ -21,7 +21,7 @@ export default function Home() {
                           </button>
                           <ul className="list-unstyled" id="wb-auto-2">
                             <li><Link to="/jobs">Jobs</Link></li>
-                            <li><Link to="/services/immigration-citizenship" className="wb-navcurr" aria-current="page">Immigration and citizenship</Link></li>
+                            <li><Link to="/immigration-citizenship" className="wb-navcurr" aria-current="page">Immigration and citizenship</Link></li>
                             <li><Link to="/travel">Travel and tourism</Link></li>
                             <li><Link to="/business">Business</Link></li>
                             <li><Link to="/benefits">Benefits</Link></li>

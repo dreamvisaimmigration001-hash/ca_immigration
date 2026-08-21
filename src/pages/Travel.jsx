@@ -16,7 +16,7 @@ export default function Travel() {
               </button>
               <ul className="list-unstyled" id="wb-auto-5">
                 <li><Link to="/jobs">Jobs</Link></li>
-                <li><Link to="/services/immigration-citizenship">Immigration and citizenship</Link></li>
+                <li><Link to="/immigration-citizenship">Immigration and citizenship</Link></li>
                 <li className="active"><Link className="wb-navcurr" to="/travel" aria-current="page">Travel and tourism</Link></li>
                 <li><Link to="/business">Business</Link></li>
                 <li><Link to="/benefits">Benefits</Link></li>

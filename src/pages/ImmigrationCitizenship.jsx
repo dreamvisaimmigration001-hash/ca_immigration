@@ -21,7 +21,7 @@ export default function ImmigrationCitizenship() {
                           </button>
                           <ul className="list-unstyled" id="wb-auto-2">
                             <li><Link to="/jobs">Jobs</Link></li>
-                            <li><Link to="/services/immigration-citizenship" className="wb-navcurr" aria-current="page">Immigration and citizenship</Link></li>
+                            <li><Link to="/immigration-citizenship" className="wb-navcurr" aria-current="page">Immigration and citizenship</Link></li>
                             <li><Link to="/travel">Travel and tourism</Link></li>
                             <li><Link to="/business">Business</Link></li>
                             <li><Link to="/benefits">Benefits</Link></li>
@@ -208,7 +208,7 @@ export default function ImmigrationCitizenship() {
                           <p>Check if your representative is authorized, report fraud or abuse</p>
                         </div>
                         <div className="col-md-6" style={{ verticalAlign: 'top', minHeight: '58px' }}>
-                          <h3><Link to="/services/immigration-citizenship/enforcement-violations">Inadmissibility, enforcement and appeals</Link></h3>
+                          <h3><Link to="/immigration-citizenship/enforcement-violations">Inadmissibility, enforcement and appeals</Link></h3>
                           <p>Check if you’re inadmissible, overcoming criminal convictions</p>
                         </div>
                       </div>
@@ -229,21 +229,21 @@ export default function ImmigrationCitizenship() {
                 <div className="row wb-eqht-grd">
                   <div className="container-component col-lg-4 col-sm-6 hght-inhrt">
                     <div className="well well-sm eqht-trgt wb-init wb-eqht-grd-inited hght-inhrt" id="image-featured-5c8410b053">
-                      <img src="/en/services/immigration-citizenship/_jcr_content/root/maincontainer/wcontainer/wcontainer_featured/image_featured_conta/image_featured_1.coreimg.jpeg/1783699105621/ee.jpeg" alt="" />
+                      <img src="/en/immigration-citizenship/_jcr_content/root/maincontainer/wcontainer/wcontainer_featured/image_featured_conta/image_featured_1.coreimg.jpeg/1783699105621/ee.jpeg" alt="" />
                       <h3><Link className="stretched-link" to="/immigration-refugees-citizenship/services/immigrate-canada/express-entry">Express Entry</Link></h3>
                       <p>Express Entry provides a faster way for skilled workers to settle in Canada</p>
                     </div>
                   </div>
                   <div className="container-component col-lg-4 col-sm-6 hght-inhrt">
                     <div className="well well-sm eqht-trgt wb-init wb-eqht-grd-inited hght-inhrt" id="image-featured-8817e2d468">
-                      <img src="/en/services/immigration-citizenship/_jcr_content/root/maincontainer/wcontainer/wcontainer_featured/image_featured_conta/image_featured_2.coreimg.jpeg/1784921780232/hc1.jpeg" alt="" />
+                      <img src="/en/immigration-citizenship/_jcr_content/root/maincontainer/wcontainer/wcontainer_featured/image_featured_conta/image_featured_2.coreimg.jpeg/1784921780232/hc1.jpeg" alt="" />
                       <h3><Link className="stretched-link" to="/helpcentre">Help Centre</Link></h3>
                       <p>Find quick answers to your questions on immigration and citizenship</p>
                     </div>
                   </div>
                   <div className="container-component col-lg-4 col-sm-6 hght-inhrt">
                     <div className="well well-sm eqht-trgt wb-init wb-eqht-grd-inited hght-inhrt" id="image-featured-758e705975">
-                      <img src="/en/services/immigration-citizenship/_jcr_content/root/maincontainer/wcontainer/wcontainer_featured/image_featured_conta/item_1783698992346.coreimg.jpeg/1783703037571/levels-feature.jpeg" alt="" />
+                      <img src="/en/immigration-citizenship/_jcr_content/root/maincontainer/wcontainer/wcontainer_featured/image_featured_conta/item_1783698992346.coreimg.jpeg/1783703037571/levels-feature.jpeg" alt="" />
                       <h3><Link className="stretched-link" to="/immigration-refugees-citizenship/corporate/mandate/corporate-initiatives/levels">Canada’s immigration levels</Link></h3>
                       <p>Supporting our economy by restoring balance and control to our immigration system</p>
                     </div>

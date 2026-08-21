@@ -1,6 +1,7 @@
-﻿import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Search, ChevronDown } from 'lucide-react';
 import GlobalMenu from './GlobalMenu';
+import Breadcrumb from './Breadcrumb';
 
 export default function Header() {
   const { pathname } = useLocation();
@@ -142,7 +143,7 @@ export default function Header() {
                       </div>
                       <hr />
 
-                      {pathname.startsWith('/immigration-refugees-citizenship/services/application/check-status') ? (
+                      {pathname.includes('/services') ? (
                         <div className="container">
                           <div className="row">
                             <div className="col-md-8">
@@ -153,7 +154,7 @@ export default function Header() {
                                 <h2 className="wb-inv">Sign in</h2>
                                 <Link
                                   className="btn btn-primary"
-                                  to="/sign-in"
+                                  to="/immigration-refugees-citizenship/services/application/ircc-accounts"
                                 >
                                   <span className="visible-xs">IRCC sign in</span>
                                   <span className="hidden-xs">IRCC sign in</span>
@@ -170,7 +171,7 @@ export default function Header() {
                                 <h2 className="wb-inv">Sign in</h2>
                                 <Link
                                   className="btn btn-primary"
-                                  to="/sign-in"
+                                  to="/immigration-refugees-citizenship/services/application/ircc-accounts"
                                 >
                                   <span className="visible-xs">IRCC sign in</span>
                                   <span className="hidden-xs">IRCC sign in</span>
@@ -181,26 +182,20 @@ export default function Header() {
                         </div>
                       )}
 
-                      <nav id="wb-bc" property="breadcrumb">
-                        <h2 className="wb-inv">You are here:</h2>
-                        <div className="container">
-                          <ol className="breadcrumb">
-                            <li>
-                              <Link to="/">Canada.ca</Link>
-                            </li>
-                            {pathname.startsWith('/immigration-refugees-citizenship/services/application') && (
+                      {pathname.includes('/services') ? (
+                        <Breadcrumb />
+                      ) : (
+                        <nav id="wb-bc" property="breadcrumb">
+                          <h2 className="wb-inv">You are here:</h2>
+                          <div className="container">
+                            <ol className="breadcrumb">
                               <li>
-                                <Link to="/services/immigration-citizenship">Immigration and citizenship</Link>
+                                <Link to="/">Canada.ca</Link>
                               </li>
-                            )}
-                            {pathname === '/immigration-refugees-citizenship/services/application/check-status' && (
-                              <li>
-                                <Link to="#">Your IRCC application</Link>
-                              </li>
-                            )}
-                          </ol>
-                        </div>
-                      </nav>
+                            </ol>
+                          </div>
+                        </nav>
+                      )}
                     </header>
                   </div>
                 </div>

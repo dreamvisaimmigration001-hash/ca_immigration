@@ -51,7 +51,7 @@ export default function Footer() {
                             <Link to="/jobs">Jobs</Link>
                           </li>
                           <li>
-                            <Link to="/services/immigration-citizenship">Immigration and citizenship</Link>
+                            <Link to="/immigration-citizenship">Immigration and citizenship</Link>
                           </li>
                           <li>
                             <Link to="/travel">Travel and tourism</Link>
