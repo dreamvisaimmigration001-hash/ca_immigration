@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Environment() {
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="Environment and natural resources"
+        description="Weather forecasts, climate change action, energy efficiency, wildlife protection, and environmental conservation in Canada."
+        keywords="Canada weather, climate change Canada, natural resources, energy efficiency, wildlife conservation"
+      />
       <div className="cmp-container">
         <div id="gridContainer" className="cmp-container">
           <div className="experiencefragment">

@@ -1,9 +1,15 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Travel() {
   return (
     <main role="main" property="mainContentOfPage">
+      <SEO
+        title="Travel and tourism"
+        description="Travel advisories, passport applications, border wait times, visitor visas, and assistance outside Canada."
+        keywords="Canada travel, travel advice Canada, Canadian passport, eTA Canada, visitor visa Canada"
+      />
       <div className="page-type-theme wb-init page-type-theme-inited" id="wb-auto-4">
 
         <div id="gridContainer">

@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Taxes() {
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="Taxes - Canada Revenue Agency"
+        description="Personal income tax, business taxes, GST/HST, payroll, CRA My Account, and tax credits in Canada."
+        keywords="Canada Revenue Agency, CRA My Account, income tax Canada, GST HST, business number CRA, tax credits"
+      />
       <div className="cmp-container">
         <div id="gridContainer" className="cmp-container">
           <div className="experiencefragment">

@@ -1,9 +1,15 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ChevronDown, Check } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Health() {
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="Health services and information"
+        description="Canadian healthcare system, food & nutrition, drug recalls, vaccines, health product safety, and mental health."
+        keywords="Canada health, Canadian Dental Care Plan, health card Canada, food guide Canada, drug recalls"
+      />
       <div className="cmp-container">
         <div id="gridContainer" className="cmp-container">
           <div className="experiencefragment">

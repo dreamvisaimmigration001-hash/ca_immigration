@@ -21,6 +21,7 @@ import Taxes from "./pages/Taxes";
 import Environment from "./pages/Environment";
 
 import MyCICHome from "./pages/MyCICHome";
+import MyCICDashboard from "./pages/MyCICDashboard";
 
 function App() {
   return (
@@ -29,30 +30,14 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="jobs" element={<Jobs />} />
-          <Route
-            path="immigration-citizenship"
-            element={<ImmigrationCitizenship />}
-          />
-          <Route
-            path="immigration-refugees-citizenship/services/application"
-            element={<Application />}
-          />
-          <Route
-            path="immigration-refugees-citizenship/services/application/check-status"
-            element={<CheckStatus />}
-          />
-          <Route
-            path="immigration-refugees-citizenship/services/application/check-processing-times"
-            element={<CheckProcessingTimes />}
-          />
-          <Route
-            path="immigration-refugees-citizenship/services/application/ircc-accounts"
-            element={<IRCCAccount />}
-          />
-          <Route
-            path="immigration-refugees-citizenship/services/application/account"
-            element={<Account />}
-          />
+          <Route path="immigration-citizenship" element={<ImmigrationCitizenship />} />
+          <Route path="services/immigration-citizenship" element={<ImmigrationCitizenship />} />
+          <Route path="immigration-refugees-citizenship/services/application" element={<Application />} />
+          <Route path="mycic/dashboard" element={<MyCICDashboard />} />
+          <Route path="immigration-refugees-citizenship/services/application/check-status" element={<CheckStatus />} />
+          <Route path="immigration-refugees-citizenship/services/application/check-processing-times" element={<CheckProcessingTimes />} />
+          <Route path="immigration-refugees-citizenship/services/application/ircc-accounts" element={<IRCCAccount />} />
+          <Route path="immigration-refugees-citizenship/services/application/account" element={<Account />} />
           <Route path="travel" element={<Travel />} />
           <Route path="business" element={<Business />} />
           <Route path="benefits" element={<Benefits />} />

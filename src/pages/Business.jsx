@@ -1,9 +1,15 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Business() {
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="Business and industry"
+        description="Starting a business, business taxes, grants, loans, permits, intellectual property, and international trade."
+        keywords="Canada business, starting a business Canada, business tax CRA, grants and loans Canada, permits and licences"
+      />
       <div className="cmp-container">
         <div id="gridContainer" className="cmp-container">
           <div className="experiencefragment">

@@ -1,9 +1,15 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ChevronDown, Check } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Benefits() {
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="Government of Canada Benefits"
+        description="Employment Insurance, Canada Child Benefit, pensions, housing benefits, student aid, and dental care."
+        keywords="Canada benefits, Employment Insurance EI, Canada Child Benefit CCB, CPP OAS pension, dental care plan"
+      />
       <div className="cmp-container">
         <div id="gridContainer" className="cmp-container">
           <div className="experiencefragment">

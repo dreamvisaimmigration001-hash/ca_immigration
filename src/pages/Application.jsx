@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import { 
   ArrowRightCircle, 
   ChevronRight, 
@@ -16,6 +17,11 @@ import {
 export default function Application() {
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="Your IRCC application"
+        description="Manage your current IRCC application, pay fees, check processing times, update contact details, or withdraw an application."
+        keywords="IRCC application, pay fees Canada visa, check status, biometrics Canada, application forms"
+      />
       <div className="mwsgeneric-base-html parbase section">
         <div className="mrgn-tp-md mrgn-bttm-md">
           <div className="container mrgn-tp-md mrgn-bttm-md py-2 wb-eqht-grd">

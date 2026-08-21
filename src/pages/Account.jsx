@@ -1,14 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { AlertCircle, Key, Landmark, UserPen } from "lucide-react";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { AlertCircle, Key, Landmark, UserPen } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Account() {
   return (
-    <main
-      property="mainContentOfPage"
-      resource="#wb-main"
-      typeof="WebPageElement"
-    >
+    <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="IRCC secure account : Sign in"
+        description="Sign in or register for an IRCC secure account using GCKey or Sign-In Partner to apply online, check application status, and submit documents."
+        keywords="IRCC secure account, sign in GCKey, Sign-In Partner, register IRCC account, Canada visa account"
+      />
       {/* Breadcrumb */}
       {/* <nav id="wb-bc" property="breadcrumb">
         <h2 className="wb-inv">You are here:</h2>

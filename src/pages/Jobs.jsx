@@ -1,9 +1,15 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ChevronDown, Check } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Jobs() {
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="Jobs and employment"
+        description="Find jobs in Canada, search Job Bank, explore work permits, training programs, and hiring foreign workers."
+        keywords="Canada jobs, Job Bank, work permit Canada, federal government jobs, Employment Insurance"
+      />
       <div className="cmp-container">
         <div id="gridContainer" className="cmp-container">
           <div className="experiencefragment">
