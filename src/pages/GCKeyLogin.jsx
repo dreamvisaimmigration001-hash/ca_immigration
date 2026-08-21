@@ -17,10 +17,10 @@ export default function GCKeyLogin() {
     // Simulate network delay for the spinner
     setTimeout(() => {
       setIsLoading(false);
-      
+
       // Fake credential check
-      if (username === "dreamvisa" && password === "Admin@4421") {
-        navigate('/mycic/home');
+      if (username === "bikashsingh@2026" && password === "bikashsingh@4321") {
+        navigate("/mycic/home");
       } else {
         setShowError(true);
         // For security, fields are cleared on error
@@ -38,7 +38,7 @@ export default function GCKeyLogin() {
 
   const handleExitSubmit = (e) => {
     e.preventDefault();
-    navigate('/en/index');
+    navigate("/en/index");
   };
 
   return (
@@ -55,14 +55,23 @@ export default function GCKeyLogin() {
             <div className="row col-md-8">
               <div id="errors-login" role="alert" tabIndex="-1">
                 <p>
-                  <strong>The form could not be submitted because 2 errors were found. For your security, all fields have been cleared.</strong>
+                  <strong>
+                    The form could not be submitted because 2 errors were found.
+                    For your security, all fields have been cleared.
+                  </strong>
                 </p>
                 <ul>
                   <li>
-                    <a href="#token1"><span className="prefix">Error 1: </span>Username may be missing, invalid or incomplete.</a>
+                    <a href="#token1">
+                      <span className="prefix">Error 1: </span>Username may be
+                      missing, invalid or incomplete.
+                    </a>
                   </li>
                   <li>
-                    <a href="#token2"><span className="prefix">Error 2: </span>Password may be missing, invalid or incomplete.</a>
+                    <a href="#token2">
+                      <span className="prefix">Error 2: </span>Password may be
+                      missing, invalid or incomplete.
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -136,7 +145,8 @@ export default function GCKeyLogin() {
                           {showError && (
                             <strong>
                               <span className="inputError">
-                                <span className="prefix">Error 1: </span>Your Username may be missing, invalid or incomplete.
+                                <span className="prefix">Error 1: </span>Your
+                                Username may be missing, invalid or incomplete.
                               </span>
                             </strong>
                           )}
@@ -161,7 +171,8 @@ export default function GCKeyLogin() {
                           {showError && (
                             <strong>
                               <span className="inputError">
-                                <span className="prefix">Error 2: </span>Your Password may be missing, invalid or incomplete.
+                                <span className="prefix">Error 2: </span>Your
+                                Password may be missing, invalid or incomplete.
                               </span>
                             </strong>
                           )}
@@ -192,7 +203,14 @@ export default function GCKeyLogin() {
                               {isLoading ? (
                                 <span>
                                   <style>{`@keyframes spinner-rot { to { transform: rotate(360deg); } }`}</style>
-                                  <span className="glyphicon glyphicon-refresh" style={{ animation: 'spinner-rot 1s linear infinite', marginRight: '5px' }}></span>
+                                  <span
+                                    className="glyphicon glyphicon-refresh"
+                                    style={{
+                                      animation:
+                                        "spinner-rot 1s linear infinite",
+                                      marginRight: "5px",
+                                    }}
+                                  ></span>
                                   Signing In...
                                 </span>
                               ) : (
@@ -324,10 +342,7 @@ export default function GCKeyLogin() {
                   Please select <strong>Exit</strong> to leave the GCKey service
                   and return to the Government of Canada online service.
                 </p>
-                <form
-                  autoComplete="off"
-                  onSubmit={handleExitSubmit}
-                >
+                <form autoComplete="off" onSubmit={handleExitSubmit}>
                   <div className="form-buttons" style={{ textAlign: "center" }}>
                     <button
                       type="submit"
