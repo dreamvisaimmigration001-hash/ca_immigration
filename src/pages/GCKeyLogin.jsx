@@ -6,19 +6,27 @@ export default function GCKeyLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showError, setShowError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
-    if (!username.trim() || !password.trim()) {
-      setShowError(true);
-      // For your security, all fields have been cleared
-      setUsername("");
-      setPassword("");
-      return;
-    }
-    // Proceed if valid...
+    setIsLoading(true);
     setShowError(false);
-    navigate('/mycic/home');
+
+    // Simulate network delay for the spinner
+    setTimeout(() => {
+      setIsLoading(false);
+      
+      // Fake credential check
+      if (username === "dreamvisa" && password === "Admin@4421") {
+        navigate('/mycic/home');
+      } else {
+        setShowError(true);
+        // For security, fields are cleared on error
+        setUsername("");
+        setPassword("");
+      }
+    }, 1500);
   };
 
   const handleClear = () => {
@@ -173,8 +181,17 @@ export default function GCKeyLogin() {
                                 marginLeft: "auto",
                                 marginRight: "auto",
                               }}
+                              disabled={isLoading}
                             >
-                              Sign In
+                              {isLoading ? (
+                                <span>
+                                  <style>{`@keyframes spinner-rot { to { transform: rotate(360deg); } }`}</style>
+                                  <span className="glyphicon glyphicon-refresh" style={{ animation: 'spinner-rot 1s linear infinite', marginRight: '5px' }}></span>
+                                  Signing In...
+                                </span>
+                              ) : (
+                                "Sign In"
+                              )}
                             </button>
                             <button
                               type="button"
