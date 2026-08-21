@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { AlertCircle, Key, Landmark, UserPen } from 'lucide-react';
 
 export default function Account() {
@@ -298,9 +299,9 @@ export default function Account() {
                       <div className="col-sm-10 col-sm-offset-1">
                         <ul className="list-unstyled lst-spcd-2">
                           <li>
-                            <a
+                            <Link
                               className="btn btn-primary btn-block p-sm-3"
-                              href="https://onlineservices-servicesenligne-cic.fjgc-gccf.gc.ca/mycic/gccf?lang=eng&idp=gckey&svc=/mycic/start"
+                              to="/j/eng/l"
                             >
                               <span className="h6 mrgn-tp-0 mrgn-bttm-0 d-flex align-items-center">
                                 <Key size={20} className="mrgn-rght-sm" aria-hidden="true" />
@@ -309,7 +310,7 @@ export default function Account() {
                                   <span className="wb-inv">GCKey Sign-In</span>
                                 </span>
                               </span>
-                            </a>
+                            </Link>
                           </li>
                           <li>
                             <a
