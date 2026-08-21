@@ -12,6 +12,8 @@ import CheckStatus from './pages/CheckStatus';
 import Application from './pages/Application';
 import CheckProcessingTimes from './pages/CheckProcessingTimes';
 import IRCCAccount from './pages/IRCCAccount';
+import Account from './pages/Account';
+import GCKeyLogin from './pages/GCKeyLogin';
 
 import Taxes from './pages/Taxes';
 import Environment from './pages/Environment';
@@ -28,6 +30,7 @@ function App() {
           <Route path="immigration-refugees-citizenship/services/application/check-status" element={<CheckStatus />} />
           <Route path="immigration-refugees-citizenship/services/application/check-processing-times" element={<CheckProcessingTimes />} />
           <Route path="immigration-refugees-citizenship/services/application/ircc-accounts" element={<IRCCAccount />} />
+          <Route path="immigration-refugees-citizenship/services/application/account" element={<Account />} />
           <Route path="travel" element={<Travel />} />
           <Route path="business" element={<Business />} />
           <Route path="benefits" element={<Benefits />} />
@@ -39,6 +42,7 @@ function App() {
           <Route path="services/environment" element={<Environment />} />
           <Route path="environment" element={<Environment />} />
         </Route>
+        <Route path="/j/eng/l" element={<GCKeyLogin />} />
       </Routes>
     </BrowserRouter>
   );
