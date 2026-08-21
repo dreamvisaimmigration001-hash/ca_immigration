@@ -17,7 +17,7 @@ export default function MyCICHome() {
       appNumber: "V353410701",
       applicantName: "BIKASH SINGH GAJMER",
       dateSubmitted: "August 14, 2026",
-      status: "PPR PENDING",
+      status: "PASSPORT SUMBISSON PENDING",
       messages: "0 message",
     },
     // {
