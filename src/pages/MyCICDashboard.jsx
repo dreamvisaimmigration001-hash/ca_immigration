@@ -136,7 +136,7 @@ export default function MyCICDashboard() {
                     Latest update:
                   </p>
                   <p style={{ margin: 0 }}>
-                    <strong>Final decision - August 14, 2026:</strong> Your application is in progress. We will send you a message once the final decision has been made.
+                    <strong>Final decision - August 14, 2026:</strong> Your application has been approved. We sent you a message to request your passport.
                   </p>
                 </div>
               </div>
@@ -434,7 +434,7 @@ export default function MyCICDashboard() {
                   </span>
                 </div>
                 <ul style={{ margin: '4px 0 0 0', paddingLeft: '46px', color: '#333', fontSize: '15px' }}>
-                  <li>August 05, 2026 Your application is in progress. We will send you a message once the final decision has been made.</li>
+                  <li>August 14, 2026 Your application was approved. We sent you a message to request your passport.</li>
                 </ul>
               </div>
 

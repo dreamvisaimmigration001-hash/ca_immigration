@@ -17,8 +17,8 @@ export default function MyCICHome() {
       appNumber: "V353410701",
       applicantName: "BIKASH SINGH GAJMER",
       dateSubmitted: "August 14, 2026",
-      status: "In progress - Background check",
-      messages: "0 messages",
+      status: "PPR arrived",
+      messages: "0 message",
     },
     // {
     //   appType: 'Express Entry - Federal Skilled Worker',
