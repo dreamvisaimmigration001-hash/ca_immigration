@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import gcKeyCss from './GCKeyLogin.css?inline';
-import GCKeyHeader from '../components/GCKeyHeader';
-import GCKeyFooter from '../components/GCKeyFooter';
 import SEO from '../components/SEO';
 import {
   ClipboardList,
@@ -74,17 +71,10 @@ export default function MyCICDashboard() {
 
   return (
     <div className="gckey-page" style={{ backgroundColor: '#fff', minHeight: '100vh', fontFamily: 'Noto Sans, sans-serif' }}>
-      <style dangerouslySetInnerHTML={{ __html: gcKeyCss }} />
       <SEO
         title="Application/profile details - Immigration, Refugees and Citizenship Canada"
         description="View status, messages, biometrics information and detailed application updates on your MyCIC account dashboard."
         keywords="MyCIC dashboard, IRCC application status, biometrics Canada visa, UCI number, application status and messages"
-      />
-      <GCKeyHeader
-        breadcrumbs={[
-          { label: 'Home', href: '/' },
-          { label: 'Your account', href: '/mycic/home' },
-        ]}
       />
 
       <div className="container" style={{ paddingTop: '10px', paddingBottom: '50px' }}>
@@ -814,8 +804,6 @@ export default function MyCICDashboard() {
 
         </main>
       </div>
-
-      <GCKeyFooter />
     </div>
   );
 }

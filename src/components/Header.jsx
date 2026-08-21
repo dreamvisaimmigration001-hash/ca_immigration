@@ -143,7 +143,7 @@ export default function Header() {
                       </div>
                       <hr />
 
-                      {pathname.includes('/services') ? (
+                      {pathname.includes('/services') || pathname.includes('/immigration-citizenship') ? (
                         <div className="container">
                           <div className="row">
                             <div className="col-md-8">
@@ -182,7 +182,7 @@ export default function Header() {
                         </div>
                       )}
 
-                      {pathname.includes('/services') ? (
+                      {pathname.includes('/services') || pathname.includes('/immigration-citizenship') ? (
                         <Breadcrumb />
                       ) : (
                         <nav id="wb-bc" property="breadcrumb">

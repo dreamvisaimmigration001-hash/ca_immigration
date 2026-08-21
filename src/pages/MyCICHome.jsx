@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import gcKeyCss from './GCKeyLogin.css?inline';
-import GCKeyHeader from '../components/GCKeyHeader';
-import GCKeyFooter from '../components/GCKeyFooter';
 import SEO from '../components/SEO';
 
 export default function MyCICHome() {
@@ -110,12 +107,6 @@ export default function MyCICHome() {
         title="MyCIC Account Dashboard"
         description="Manage your IRCC applications, continue saved draft forms, apply for Canadian visas, and view status history in your secure MyCIC account."
         keywords="MyCIC account, IRCC dashboard, GCKey portal, Canada visa application, check status, continue application"
-      />
-      <GCKeyHeader
-        breadcrumbs={[
-          { label: 'Home', href: '/' },
-          { label: 'My Account' },
-        ]}
       />
 
       <div className="container" style={{ minHeight: '600px', paddingTop: '10px', paddingBottom: '40px' }}>
@@ -633,8 +624,6 @@ export default function MyCICHome() {
           </section>
         </main>
       </div>
-
-      <GCKeyFooter />
     </div>
   );
 }
