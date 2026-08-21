@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import DelayedLink from '../components/DelayedLink';
 import SEO from '../components/SEO';
 
 export default function MyCICHome() {
@@ -10,7 +11,7 @@ export default function MyCICHome() {
   const [submittedData, setSubmittedData] = useState([
     {
       appType: 'Visitor Visa (Temporary Resident Visa)',
-      appNumber: 'V309284019',
+      appNumber: 'V353410701',
       applicantName: 'Oluwaseun Webinar',
       dateSubmitted: 'July 14, 2026',
       status: 'In progress - Background check',
@@ -332,9 +333,9 @@ export default function MyCICHome() {
                         <td style={{ padding: '8px 10px', borderRight: '1px solid #eee' }}>{row.status}</td>
                         <td style={{ padding: '8px 10px', borderRight: '1px solid #eee' }}>{row.messages}</td>
                         <td style={{ padding: '8px 10px' }}>
-                          <Link to="/mycic/dashboard" style={{ color: '#284162', textDecoration: 'underline' }}>
+                          <DelayedLink to="/mycic/dashboard" style={{ color: '#284162', textDecoration: 'underline' }}>
                             View full application status
-                          </Link>
+                          </DelayedLink>
                         </td>
                       </tr>
                     ))
@@ -345,13 +346,11 @@ export default function MyCICHome() {
 
             <p style={{ marginTop: '10px', fontSize: '13px', color: '#333' }}>
               Did you apply on paper or don't see your online application in your account?{' '}
-              <a
-                href="#"
-                onClick={(e) => e.preventDefault()}
+              <DelayedLink
                 style={{ color: '#284162', textDecoration: 'underline' }}
               >
                 Add (link) your application to your account
-              </a>{' '}
+              </DelayedLink>{' '}
               to access it and check your status online.
             </p>
           </section>
@@ -556,19 +555,19 @@ export default function MyCICHome() {
             <div className="row">
               {/* Column 1: Apply to come to Canada */}
               <div className="col-md-4 col-sm-12" style={{ marginBottom: '25px' }}>
-                <Link
+                <DelayedLink
                   to="/immigration-refugees-citizenship/services/application"
                   style={{
+                    display: 'block',
+                    fontSize: '18px',
                     fontWeight: 'bold',
-                    fontSize: '16px',
                     color: '#284162',
-                    textDecoration: 'underline',
-                    display: 'inline-block',
-                    marginBottom: '6px',
+                    textDecoration: 'none',
+                    lineHeight: '1.2'
                   }}
                 >
                   Apply to come to Canada
-                </Link>
+                </DelayedLink>
 
                 <p style={{ marginTop: '4px', fontSize: '13px', color: '#333333', lineHeight: '1.45' }}>
                   Includes applications for visitor visas, work and study permits, Express Entry and
@@ -579,9 +578,7 @@ export default function MyCICHome() {
 
               {/* Column 2: Refugees */}
               <div className="col-md-4 col-sm-12" style={{ marginBottom: '25px' }}>
-                <a
-                  href="#"
-                  onClick={(e) => e.preventDefault()}
+                <DelayedLink
                   style={{
                     fontWeight: 'bold',
                     fontSize: '16px',
@@ -592,7 +589,7 @@ export default function MyCICHome() {
                   }}
                 >
                   Refugees: Apply for temporary health care benefits
-                </a>
+                </DelayedLink>
                 <p style={{ marginTop: '4px', fontSize: '13px', color: '#333333', lineHeight: '1.45' }}>
                   Use this application if you are a protected person or refugee claimant who wants to apply for
                   the Interim Federal Health Program.
@@ -601,9 +598,7 @@ export default function MyCICHome() {
 
               {/* Column 3: Citizenship */}
               <div className="col-md-4 col-sm-12" style={{ marginBottom: '25px' }}>
-                <a
-                  href="#"
-                  onClick={(e) => e.preventDefault()}
+                <DelayedLink
                   style={{
                     fontWeight: 'bold',
                     fontSize: '16px',
@@ -614,7 +609,7 @@ export default function MyCICHome() {
                   }}
                 >
                   Citizenship: Apply for a search or proof of citizenship
-                </a>
+                </DelayedLink>
                 <p style={{ marginTop: '4px', fontSize: '13px', color: '#333333', lineHeight: '1.45' }}>
                   Use this application to apply for proof of citizenship (citizenship certificate) or to search
                   citizenship records.

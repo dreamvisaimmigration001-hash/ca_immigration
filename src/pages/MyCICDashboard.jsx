@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import DelayedLink from '../components/DelayedLink';
 import SEO from '../components/SEO';
 import {
   ClipboardList,
@@ -26,7 +27,8 @@ export default function MyCICDashboard() {
       dateSent: 'December 20, 2024',
       dateRead: 'December 21, 2024',
       sender: 'Immigration, Refugees and Citizenship Canada',
-      content: `Dear Moazamul Haque,\n\nThis is an Information Letter regarding your ongoing application (V309284019).\n\nPlease note that your application is currently under final administrative processing. No further action is required from you at this time.\n\nThank you,\nImmigration, Refugees and Citizenship Canada`,
+      content: `Dear BIKASH SINGH GAJMER,\n\nThis is an Information Letter regarding your ongoing application (V353410701).\n\nPlease note that your application is currently under final administrative processing. No further action is required from you at this time.\n\nThank you,\nImmigration, Refugees and Citizenship Canada`,
+      pdfUrl: '/BIKASH SINGH GAJMER PPR.pdf',
     },
     // {
     //   id: 'MSG-102',
@@ -34,7 +36,7 @@ export default function MyCICDashboard() {
     //   dateSent: 'November 29, 2024',
     //   dateRead: 'November 30, 2024',
     //   sender: 'Immigration, Refugees and Citizenship Canada',
-    //   content: `Dear Moazamul Haque,\n\nWe require additional details regarding your travel itinerary and contact information.\n\nPlease upload the requested details to your account or submit them via the IRCC Web form within 30 days.\n\nThank you,\nImmigration, Refugees and Citizenship Canada`,
+    //   content: `Dear BIKASH SINGH GAJMER,\n\nWe require additional details regarding your travel itinerary and contact information.\n\nPlease upload the requested details to your account or submit them via the IRCC Web form within 30 days.\n\nThank you,\nImmigration, Refugees and Citizenship Canada`,
     // },
     // {
     //   id: 'MSG-103',
@@ -42,7 +44,7 @@ export default function MyCICDashboard() {
     //   dateSent: 'October 17, 2024',
     //   dateRead: 'October 20, 2024',
     //   sender: 'Immigration, Refugees and Citizenship Canada',
-    //   content: `Dear Moazamul Haque,\n\nThis letter is to request updated documentation regarding your application file V309284019.\n\nThank you for your prompt cooperation.\n\nImmigration, Refugees and Citizenship Canada`,
+    //   content: `Dear BIKASH SINGH GAJMER,\n\nThis letter is to request updated documentation regarding your application file V353410701.\n\nThank you for your prompt cooperation.\n\nImmigration, Refugees and Citizenship Canada`,
     // },
     // {
     //   id: 'MSG-104',
@@ -50,7 +52,7 @@ export default function MyCICDashboard() {
     //   dateSent: 'June 25, 2024',
     //   dateRead: 'June 25, 2024',
     //   sender: 'IRCC Settlement Network',
-    //   content: `Dear Moazamul Haque,\n\nYou are invited to access free online Pre-Arrival Settlement Services funded by Immigration, Refugees and Citizenship Canada (IRCC).\n\nThese services will help you prepare for living, working, and settling in Canada before your departure.\n\nSincerely,\nSettlement Network Canada`,
+    //   content: `Dear BIKASH SINGH GAJMER,\n\nYou are invited to access free online Pre-Arrival Settlement Services funded by Immigration, Refugees and Citizenship Canada (IRCC).\n\nThese services will help you prepare for living, working, and settling in Canada before your departure.\n\nSincerely,\nSettlement Network Canada`,
     // },
     // {
     //   id: 'MSG-105',
@@ -58,7 +60,7 @@ export default function MyCICDashboard() {
     //   dateSent: 'June 25, 2024',
     //   dateRead: 'June 25, 2024',
     //   sender: 'IRCC Health Branch',
-    //   content: `Dear Moazamul Haque,\n\nAttached is your official Medical Report - Section A Client Identification and Summary form (IMM 1017E).\n\nStatus: Passed / Completed.\nFile Ref: IMM-1017E-9928174\n\nImmigration, Refugees and Citizenship Canada`,
+    //   content: `Dear BIKASH SINGH GAJMER,\n\nAttached is your official Medical Report - Section A Client Identification and Summary form (IMM 1017E).\n\nStatus: Passed / Completed.\nFile Ref: IMM-1017E-9928174\n\nImmigration, Refugees and Citizenship Canada`,
     // },
   ];
 
@@ -134,7 +136,7 @@ export default function MyCICDashboard() {
                     Latest update:
                   </p>
                   <p style={{ margin: 0 }}>
-                    <strong>Final decision - December 18, 2024:</strong> Your application is in progress. We will send you a message once the final decision has been made.
+                    <strong>Final decision - August 14, 2026:</strong> Your application is in progress. We will send you a message once the final decision has been made.
                   </p>
                 </div>
               </div>
@@ -165,16 +167,16 @@ export default function MyCICDashboard() {
                 </div>
                 <div style={{ padding: '18px', fontSize: '14px', lineHeight: '1.7', color: '#333' }}>
                   <div>
-                    <strong>Principal Applicant:</strong> Moazamul Haque
+                    <strong>Principal Applicant:</strong> BIKASH SINGH GAJMER
                   </div>
                   <div>
-                    <strong>Unique Client Identifier (UCI):</strong> 110974109
+                    <strong>Unique Client Identifier (UCI):</strong> 11-4897-0335
                   </div>
                   <div>
-                    <strong>Application Number:</strong> V309284019
+                    <strong>Application Number:</strong> V353410701
                   </div>
                   <div>
-                    <strong>Date Received:</strong> February 24, 2024
+                    <strong>Date Received:</strong> August, 14, 2026
                   </div>
                   <div style={{ marginTop: '10px' }}>
                     <strong>Biometrics:</strong>
@@ -608,22 +610,37 @@ export default function MyCICDashboard() {
                       }}
                     >
                       <td style={{ padding: '10px 12px', borderRight: '1px solid #eee' }}>
-                        <button
-                          onClick={() => setSelectedMessage(row)}
-                          style={{
-                            background: 'none',
-                            border: 'none',
-                            color: '#284162',
-                            textDecoration: 'underline',
-                            padding: 0,
-                            fontSize: '14px',
-                            textAlign: 'left',
-                            cursor: 'pointer',
-                            fontWeight: 'normal',
-                          }}
-                        >
-                          {row.subject}
-                        </button>
+                        {row.pdfUrl ? (
+                          <a
+                            href={row.pdfUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              color: '#284162',
+                              textDecoration: 'underline',
+                              fontSize: '14px',
+                            }}
+                          >
+                            {row.subject}
+                          </a>
+                        ) : (
+                          <button
+                            onClick={() => setSelectedMessage(row)}
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              color: '#284162',
+                              textDecoration: 'underline',
+                              padding: 0,
+                              fontSize: '14px',
+                              textAlign: 'left',
+                              cursor: 'pointer',
+                              fontWeight: 'normal',
+                            }}
+                          >
+                            {row.subject}
+                          </button>
+                        )}
                       </td>
                       <td style={{ padding: '10px 12px', borderRight: '1px solid #eee', color: '#333' }}>
                         {row.dateSent}
@@ -716,7 +733,7 @@ export default function MyCICDashboard() {
                   <div style={{ borderBottom: '1px solid #eee', paddingBottom: '10px', marginBottom: '15px', color: '#555', fontSize: '13px' }}>
                     <div><strong>From:</strong> {selectedMessage.sender}</div>
                     <div><strong>Date Sent:</strong> {selectedMessage.dateSent}</div>
-                    <div><strong>Application Number:</strong> V309284019</div>
+                    <div><strong>Application Number:</strong> V353410701</div>
                   </div>
                   
                   <pre style={{ fontFamily: 'Noto Sans, sans-serif', whiteSpace: 'pre-wrap', margin: 0, backgroundColor: '#f9f9f9', padding: '15px', borderRadius: '4px', border: '1px solid #e0e0e0' }}>
@@ -796,9 +813,9 @@ export default function MyCICDashboard() {
           {/* Bottom Action Link */}
           <div className="row" style={{ marginTop: '10px', borderTop: '1px solid #ddd', paddingTop: '15px' }}>
             <div className="col-xs-12">
-              <Link to="/mycic/home" style={{ color: '#284162', textDecoration: 'underline', fontWeight: 'bold', fontSize: '15px' }}>
+              <DelayedLink to="/mycic/home" style={{ color: '#284162', textDecoration: 'underline', fontWeight: 'bold', fontSize: '15px' }}>
                 ← Return to account home
-              </Link>
+              </DelayedLink>
             </div>
           </div>
 
