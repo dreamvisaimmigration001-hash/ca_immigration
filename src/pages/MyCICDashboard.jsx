@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import gcKeyCss from './GCKeyLogin.css?inline';
 import GCKeyHeader from '../components/GCKeyHeader';
 import GCKeyFooter from '../components/GCKeyFooter';
 import SEO from '../components/SEO';
@@ -24,44 +25,44 @@ export default function MyCICDashboard() {
   const messagesList = [
     {
       id: 'MSG-101',
-      subject: 'Information letter',
+      subject: 'Original Passport Request',
       dateSent: 'December 20, 2024',
       dateRead: 'December 21, 2024',
       sender: 'Immigration, Refugees and Citizenship Canada',
       content: `Dear Moazamul Haque,\n\nThis is an Information Letter regarding your ongoing application (V309284019).\n\nPlease note that your application is currently under final administrative processing. No further action is required from you at this time.\n\nThank you,\nImmigration, Refugees and Citizenship Canada`,
     },
-    {
-      id: 'MSG-102',
-      subject: 'Request letter',
-      dateSent: 'November 29, 2024',
-      dateRead: 'November 30, 2024',
-      sender: 'Immigration, Refugees and Citizenship Canada',
-      content: `Dear Moazamul Haque,\n\nWe require additional details regarding your travel itinerary and contact information.\n\nPlease upload the requested details to your account or submit them via the IRCC Web form within 30 days.\n\nThank you,\nImmigration, Refugees and Citizenship Canada`,
-    },
-    {
-      id: 'MSG-103',
-      subject: 'Request letter',
-      dateSent: 'October 17, 2024',
-      dateRead: 'October 20, 2024',
-      sender: 'Immigration, Refugees and Citizenship Canada',
-      content: `Dear Moazamul Haque,\n\nThis letter is to request updated documentation regarding your application file V309284019.\n\nThank you for your prompt cooperation.\n\nImmigration, Refugees and Citizenship Canada`,
-    },
-    {
-      id: 'MSG-104',
-      subject: 'Invitation to Pre-arrival services',
-      dateSent: 'June 25, 2024',
-      dateRead: 'June 25, 2024',
-      sender: 'IRCC Settlement Network',
-      content: `Dear Moazamul Haque,\n\nYou are invited to access free online Pre-Arrival Settlement Services funded by Immigration, Refugees and Citizenship Canada (IRCC).\n\nThese services will help you prepare for living, working, and settling in Canada before your departure.\n\nSincerely,\nSettlement Network Canada`,
-    },
-    {
-      id: 'MSG-105',
-      subject: 'Medical Report - Section A Client identification and summary (IMM 1017E)',
-      dateSent: 'June 25, 2024',
-      dateRead: 'June 25, 2024',
-      sender: 'IRCC Health Branch',
-      content: `Dear Moazamul Haque,\n\nAttached is your official Medical Report - Section A Client Identification and Summary form (IMM 1017E).\n\nStatus: Passed / Completed.\nFile Ref: IMM-1017E-9928174\n\nImmigration, Refugees and Citizenship Canada`,
-    },
+    // {
+    //   id: 'MSG-102',
+    //   subject: 'Request letter',
+    //   dateSent: 'November 29, 2024',
+    //   dateRead: 'November 30, 2024',
+    //   sender: 'Immigration, Refugees and Citizenship Canada',
+    //   content: `Dear Moazamul Haque,\n\nWe require additional details regarding your travel itinerary and contact information.\n\nPlease upload the requested details to your account or submit them via the IRCC Web form within 30 days.\n\nThank you,\nImmigration, Refugees and Citizenship Canada`,
+    // },
+    // {
+    //   id: 'MSG-103',
+    //   subject: 'Request letter',
+    //   dateSent: 'October 17, 2024',
+    //   dateRead: 'October 20, 2024',
+    //   sender: 'Immigration, Refugees and Citizenship Canada',
+    //   content: `Dear Moazamul Haque,\n\nThis letter is to request updated documentation regarding your application file V309284019.\n\nThank you for your prompt cooperation.\n\nImmigration, Refugees and Citizenship Canada`,
+    // },
+    // {
+    //   id: 'MSG-104',
+    //   subject: 'Invitation to Pre-arrival services',
+    //   dateSent: 'June 25, 2024',
+    //   dateRead: 'June 25, 2024',
+    //   sender: 'IRCC Settlement Network',
+    //   content: `Dear Moazamul Haque,\n\nYou are invited to access free online Pre-Arrival Settlement Services funded by Immigration, Refugees and Citizenship Canada (IRCC).\n\nThese services will help you prepare for living, working, and settling in Canada before your departure.\n\nSincerely,\nSettlement Network Canada`,
+    // },
+    // {
+    //   id: 'MSG-105',
+    //   subject: 'Medical Report - Section A Client identification and summary (IMM 1017E)',
+    //   dateSent: 'June 25, 2024',
+    //   dateRead: 'June 25, 2024',
+    //   sender: 'IRCC Health Branch',
+    //   content: `Dear Moazamul Haque,\n\nAttached is your official Medical Report - Section A Client Identification and Summary form (IMM 1017E).\n\nStatus: Passed / Completed.\nFile Ref: IMM-1017E-9928174\n\nImmigration, Refugees and Citizenship Canada`,
+    // },
   ];
 
   // Filtering messages
@@ -73,6 +74,7 @@ export default function MyCICDashboard() {
 
   return (
     <div className="gckey-page" style={{ backgroundColor: '#fff', minHeight: '100vh', fontFamily: 'Noto Sans, sans-serif' }}>
+      <style dangerouslySetInnerHTML={{ __html: gcKeyCss }} />
       <SEO
         title="Application/profile details - Immigration, Refugees and Citizenship Canada"
         description="View status, messages, biometrics information and detailed application updates on your MyCIC account dashboard."
@@ -82,14 +84,13 @@ export default function MyCICDashboard() {
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'Your account', href: '/mycic/home' },
-          { label: 'Application/profile details' },
         ]}
       />
 
       <div className="container" style={{ paddingTop: '10px', paddingBottom: '50px' }}>
         <main role="main" property="mainContentOfPage" id="wb-cont">
           
-          {/* Main Title */}
+          {/* Main Title & Subtitle */}
           <div className="row" style={{ marginBottom: '15px' }}>
             <div className="col-xs-12">
               <h1
@@ -98,12 +99,109 @@ export default function MyCICDashboard() {
                   fontWeight: '700',
                   color: '#26374a',
                   marginTop: '10px',
-                  marginBottom: '15px',
+                  marginBottom: '10px',
                   lineHeight: '1.2',
                 }}
               >
-                Application/profile details
+                Application status and messages
               </h1>
+              <p style={{ fontSize: '15px', color: '#333333', marginBottom: '20px' }}>
+                Check the status, review the details and read messages regarding your application.
+              </p>
+            </div>
+          </div>
+
+          {/* TWO SIDE-BY-SIDE CARDS: Application Status (Left) & Applicant Information (Right) */}
+          <div className="row" style={{ marginBottom: '35px' }}>
+            {/* Left Box: Application status */}
+            <div className="col-md-6 col-sm-12" style={{ marginBottom: '20px' }}>
+              <div
+                style={{
+                  border: '1px solid #ccc',
+                  borderRadius: '4px',
+                  backgroundColor: '#ffffff',
+                  height: '100%',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
+                }}
+              >
+                <div
+                  style={{
+                    backgroundColor: '#f5f5f5',
+                    borderBottom: '1px solid #ccc',
+                    padding: '12px 18px',
+                    fontWeight: 'bold',
+                    fontSize: '18px',
+                    color: '#26374a',
+                  }}
+                >
+                  Application status
+                </div>
+                <div style={{ padding: '18px', fontSize: '15px', lineHeight: '1.5', color: '#333' }}>
+                  <p style={{ marginBottom: '16px' }}>
+                    We are processing your application. We will send you a message when there is an update or if we need more information from you.
+                  </p>
+                  <p style={{ fontWeight: 'bold', marginBottom: '6px', color: '#26374a' }}>
+                    Latest update:
+                  </p>
+                  <p style={{ margin: 0 }}>
+                    <strong>Final decision - December 18, 2024:</strong> Your application is in progress. We will send you a message once the final decision has been made.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Box: Applicant Information */}
+            <div className="col-md-6 col-sm-12" style={{ marginBottom: '20px' }}>
+              <div
+                style={{
+                  border: '1px solid #ccc',
+                  borderRadius: '4px',
+                  backgroundColor: '#ffffff',
+                  height: '100%',
+                  boxShadow: '0 1px 3px rgba(0,0,0,0.05)',
+                }}
+              >
+                <div
+                  style={{
+                    backgroundColor: '#f5f5f5',
+                    borderBottom: '1px solid #ccc',
+                    padding: '12px 18px',
+                    fontWeight: 'bold',
+                    fontSize: '18px',
+                    color: '#26374a',
+                  }}
+                >
+                  Applicant Information
+                </div>
+                <div style={{ padding: '18px', fontSize: '14px', lineHeight: '1.7', color: '#333' }}>
+                  <div>
+                    <strong>Principal Applicant:</strong> Moazamul Haque
+                  </div>
+                  <div>
+                    <strong>Unique Client Identifier (UCI):</strong> 110974109
+                  </div>
+                  <div>
+                    <strong>Application Number:</strong> V309284019
+                  </div>
+                  <div>
+                    <strong>Date Received:</strong> February 24, 2024
+                  </div>
+                  <div style={{ marginTop: '10px' }}>
+                    <strong>Biometrics:</strong>
+                    <ul style={{ margin: '4px 0 0 0', paddingLeft: '22px', color: '#333' }}>
+                      <li>
+                        <strong>Biometrics Number:</strong> 0001098481811919
+                      </li>
+                      <li>
+                        <strong>Date of Biometrics Enrolment:</strong> June 19, 2024
+                      </li>
+                      <li>
+                        <strong>Expiry Date:</strong> June 19, 2034
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -684,7 +782,7 @@ export default function MyCICDashboard() {
             </div>
           )}
 
-          {/* Page Feedback Action Box (Matches Bottom of Screenshot) */}
+          {/* Page Feedback Action Box */}
           <div className="row" style={{ marginTop: '30px', marginBottom: '20px' }}>
             <div className="col-xs-12">
               <button
