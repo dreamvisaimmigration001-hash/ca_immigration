@@ -49,7 +49,7 @@ export default function GCKeyLayout() {
             <div className="brand col-xs-7 col-sm-9">
               <Link
                 id="logo-link"
-                to="/index"
+                to="/"
                 target="_blank"
                 title="Welcome to Canada.ca (opens in a new window)"
               >
