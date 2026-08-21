@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import '../pages/GCKeyLogin.css';
+import gcKeyCssUrl from '../pages/GCKeyLogin.css?url';
 import sigBlkEn from '../assets/sig-blk-en.svg';
 import wmmsBlk from '../assets/wmms-blk.svg';
 
@@ -9,8 +9,10 @@ export default function GCKeyLayout() {
   const isForgot = location.pathname.includes('/fu');
 
   return (
-    <div className="gckey-page">
-      <ul id="wb-tphp" className="wb-init wb-disable-inited">
+    <>
+      <link rel="stylesheet" href={gcKeyCssUrl} />
+      <div className="gckey-page">
+        <ul id="wb-tphp" className="wb-init wb-disable-inited">
         <li className="wb-slc">
           <a className="wb-sl" id="skip-main" href="#wb-cont">
             Skip to main content
@@ -522,5 +524,6 @@ export default function GCKeyLayout() {
         </div>
       </footer>
     </div>
+    </>
   );
 }
