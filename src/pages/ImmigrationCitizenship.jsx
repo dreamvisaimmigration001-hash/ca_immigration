@@ -1,9 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ChevronDown, Check } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function ImmigrationCitizenship() {
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="Immigration and citizenship - Services"
+        description="Apply to travel, study, work or live in Canada. Check your application status, processing times, and IRCC account information."
+        keywords="Immigration Canada, Canadian citizenship, visit Canada, Express Entry, work in Canada, study permit"
+      />
       <div className="cmp-container">
         <div id="gridContainer" className="cmp-container">
           <div className="experiencefragment">

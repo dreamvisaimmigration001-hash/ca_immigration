@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, Check, Globe, FileText, Clock, AlertTriangle } from 'lucide-react';
 import { checkStatusData } from './CheckStatusData';
+import SEO from '../components/SEO';
 
 export default function CheckStatus() {
   const [path, setPath] = useState([checkStatusData]);
@@ -53,6 +54,11 @@ export default function CheckStatus() {
 
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" className="container">
+      <SEO
+        title="How to check your application status"
+        description="Find out how to check the status of your IRCC application online, including visitor visas, study permits, work permits, and Express Entry."
+        keywords="check application status Canada, IRCC status tool, visa application status, PR application status tracking"
+      />
       <div className="mwstitle section">
         <h1 property="name" id="wb-cont" dir="ltr">How to check your application status</h1>
       </div>

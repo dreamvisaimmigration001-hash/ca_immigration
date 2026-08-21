@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import SEO from "../components/SEO";
 
 const IRCCAccount = () => {
   useEffect(() => {
@@ -81,6 +82,11 @@ const IRCCAccount = () => {
         resource="#wb-main"
         typeof="WebPageElement"
       >
+        <SEO
+          title="Sign in to your IRCC account"
+          description="Sign in to your official IRCC account to submit applications, view application updates, and manage your Canadian visa profile."
+          keywords="Sign in IRCC account, GCKey sign in, IRCC portal login, Canada immigration account"
+        />
         <div className="mwsgeneric-base-html parbase section">
           <div className="container">
             <div className="row">

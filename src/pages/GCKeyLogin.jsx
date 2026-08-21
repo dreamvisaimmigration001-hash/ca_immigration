@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function GCKeyLogin() {
   const navigate = useNavigate();
@@ -42,6 +43,11 @@ export default function GCKeyLogin() {
 
   return (
     <main role="main" property="mainContentOfPage">
+      <SEO
+        title="Welcome to GCKey - Sign In / Sign Up"
+        description="Sign in with your GCKey username and password to access Government of Canada online services, IRCC account, and application portals."
+        keywords="GCKey login, Government of Canada login, GCKey sign in, IRCC login, MyCIC login"
+      />
       <div className="row">
         <div className="col-xs-12">
           <h1 id="wb-cont">Welcome to GCKey</h1>

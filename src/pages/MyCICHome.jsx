@@ -3,19 +3,58 @@ import { Link } from 'react-router-dom';
 import gcKeyCss from './GCKeyLogin.css?inline';
 import GCKeyHeader from '../components/GCKeyHeader';
 import GCKeyFooter from '../components/GCKeyFooter';
+import SEO from '../components/SEO';
 
 export default function MyCICHome() {
   // Submitted Applications State
   const [submittedSearch, setSubmittedSearch] = useState('');
   const [submittedEntriesPerPage, setSubmittedEntriesPerPage] = useState(5);
   const [submittedSort, setSubmittedSort] = useState({ column: 'dateSubmitted', direction: 'desc' });
-  const [submittedData, setSubmittedData] = useState([]);
+  const [submittedData, setSubmittedData] = useState([
+    {
+      appType: 'Visitor Visa (Temporary Resident Visa)',
+      appNumber: 'V309284019',
+      applicantName: 'Oluwaseun Webinar',
+      dateSubmitted: 'July 14, 2026',
+      status: 'In progress - Background check',
+      messages: 'Read (2)',
+    },
+    {
+      appType: 'Express Entry - Federal Skilled Worker',
+      appNumber: 'E009481023',
+      applicantName: 'Oluwaseun Webinar',
+      dateSubmitted: 'June 02, 2026',
+      status: 'Submitted - Under review',
+      messages: 'Unread (1)',
+    },
+    {
+      appType: 'Work Permit (Open Work Permit)',
+      appNumber: 'W301948271',
+      applicantName: 'Oluwaseun Webinar',
+      dateSubmitted: 'March 20, 2026',
+      status: 'Approved',
+      messages: 'Read (4)',
+    },
+  ]);
 
   // Unsubmitted Applications State
   const [unsubmittedSearch, setUnsubmittedSearch] = useState('');
   const [unsubmittedEntriesPerPage, setUnsubmittedEntriesPerPage] = useState(5);
   const [unsubmittedSort, setUnsubmittedSort] = useState({ column: 'dateCreated', direction: 'desc' });
-  const [unsubmittedData, setUnsubmittedData] = useState([]);
+  const [unsubmittedData, setUnsubmittedData] = useState([
+    {
+      appType: 'Study Permit Extension',
+      dateCreated: 'August 10, 2026',
+      daysLeft: '50 days',
+      dateSaved: 'August 18, 2026',
+    },
+    {
+      appType: 'Post-Graduation Work Permit (PGWP)',
+      dateCreated: 'August 01, 2026',
+      daysLeft: '41 days',
+      dateSaved: 'August 15, 2026',
+    },
+  ]);
 
   // Helper to render sort arrows
   const renderSortIndicator = (currentSort, colKey) => {
@@ -66,9 +105,12 @@ export default function MyCICHome() {
   );
 
   return (
-    <>
-      <style dangerouslySetInnerHTML={{ __html: gcKeyCss }} />
-      <div className="gckey-page">
+    <div className="gckey-page">
+      <SEO
+        title="MyCIC Account Dashboard"
+        description="Manage your IRCC applications, continue saved draft forms, apply for Canadian visas, and view status history in your secure MyCIC account."
+        keywords="MyCIC account, IRCC dashboard, GCKey portal, Canada visa application, check status, continue application"
+      />
       <GCKeyHeader
         breadcrumbs={[
           { label: 'Home', href: '/' },
@@ -299,9 +341,9 @@ export default function MyCICHome() {
                         <td style={{ padding: '8px 10px', borderRight: '1px solid #eee' }}>{row.status}</td>
                         <td style={{ padding: '8px 10px', borderRight: '1px solid #eee' }}>{row.messages}</td>
                         <td style={{ padding: '8px 10px' }}>
-                          <button style={{ color: '#284162', textDecoration: 'underline', background: 'none', border: 'none', padding: 0 }}>
-                            View
-                          </button>
+                          <Link to="/mycic/dashboard" style={{ color: '#284162', textDecoration: 'underline' }}>
+                            View full application status
+                          </Link>
                         </td>
                       </tr>
                     ))
@@ -594,6 +636,5 @@ export default function MyCICHome() {
 
       <GCKeyFooter />
     </div>
-    </>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const countries = [
   { code: 'AF', name: 'Afghanistan' },
@@ -40,6 +41,11 @@ const CheckProcessingTimes = () => {
 
   return (
     <>
+      <SEO
+        title="Check our current processing times"
+        description="Check official IRCC processing times for visitor visas, study permits, work permits, permanent residence, and super visas."
+        keywords="IRCC processing times, Canada visa processing time, study permit processing time, work permit turnaround time"
+      />
       <div className="mwsgeneric-base-html parbase section">
         <div className="container">
           <h1 property="name" id="wb-cont">Check our current processing times</h1>

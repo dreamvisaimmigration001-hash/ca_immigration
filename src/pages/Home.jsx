@@ -1,9 +1,15 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ChevronDown, Check } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Home() {
   return (
     <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+      <SEO
+        title="Immigration and citizenship"
+        description="Official Government of Canada portal for visas, work permits, study permits, Canadian citizenship, Express Entry, and application tracking."
+        keywords="Canada immigration, IRCC, Express Entry, study permit, work permit, visitor visa, check status"
+      />
       <div className="cmp-container">
         <div id="gridContainer" className="cmp-container">
           <div className="experiencefragment">

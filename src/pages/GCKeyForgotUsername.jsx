@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function GCKeyForgotUsername() {
   const navigate = useNavigate();
@@ -23,6 +24,11 @@ export default function GCKeyForgotUsername() {
 
   return (
     <main role="main" property="mainContentOfPage">
+      <SEO
+        title="Recover Username Step 1 of 2 - GCKey"
+        description="Recover your GCKey username by entering your registered email address."
+        keywords="GCKey recover username, forgot GCKey username, GCKey password recovery"
+      />
       <h1 id="wb-cont">Recover Username Step 1 of 2</h1>
       <noscript>
         <div className="row nojs-show">
