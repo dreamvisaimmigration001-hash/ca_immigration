@@ -279,7 +279,7 @@ export default function MyCICDashboard() {
                   </span>
                 </div>
                 <ul style={{ margin: '4px 0 0 0', paddingLeft: '46px', color: '#333', fontSize: '15px' }}>
-                  <li>July 10, 2024 You passed the medical exam.</li>
+                  <li>March 24, 2026 You passed the medical exam.</li>
                 </ul>
               </div>
 
@@ -310,7 +310,7 @@ export default function MyCICDashboard() {
                   </span>
                 </div>
                 <ul style={{ margin: '4px 0 0 0', paddingLeft: '46px', color: '#333', fontSize: '15px' }}>
-                  <li>December 3, 2024 We are reviewing the additional documents you provided.</li>
+                  <li>March 24, 2026 We are reviewing the additional documents you provided.</li>
                 </ul>
               </div>
 
@@ -434,7 +434,7 @@ export default function MyCICDashboard() {
                   </span>
                 </div>
                 <ul style={{ margin: '4px 0 0 0', paddingLeft: '46px', color: '#333', fontSize: '15px' }}>
-                  <li>December 18, 2024 Your application is in progress. We will send you a message once the final decision has been made.</li>
+                  <li>August 05, 2026 Your application is in progress. We will send you a message once the final decision has been made.</li>
                 </ul>
               </div>
 
