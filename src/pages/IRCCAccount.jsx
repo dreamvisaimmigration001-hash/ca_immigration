@@ -223,7 +223,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             
-                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q2:SignIn_VisitorVisa_IRCCSecure"
                                           >
@@ -311,7 +311,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q2:SignIn_EE_IRCCSecure"
                                         >
@@ -348,7 +348,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             
-                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q3:Study_StudyPermit_IRCCSecure"
                                           >
@@ -420,7 +420,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q2:SignIn_WorkPermit_IRCCSecure"
                                         >
@@ -694,7 +694,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             
-                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_VisitorVisa_IRCCSecure"
                                           >
@@ -786,7 +786,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_VisitorVisa_eTA_IRCCSecure"
                                         >
@@ -825,7 +825,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_VisitorRecord_IRCCSecure"
                                         >
@@ -862,7 +862,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             
-                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_SuperVisa_IRCCSecure"
                                           >
@@ -949,7 +949,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             
-                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_TransitVisa_IRCCSecure"
                                           >
@@ -1049,7 +1049,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Immigrate_EE_IRCCSecure"
                                         >
@@ -1096,7 +1096,7 @@ const IRCCAccount = () => {
                                         <a
                                           
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Immigrate_TRPR_IRCCSecure"
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                         >
                                           IRCC secure account (GCKey or Sign-In
@@ -1323,7 +1323,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:WorkTemp_WorkPermit_IRCCSecure"
                                         >
@@ -1362,7 +1362,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:WorkTemp_IEC_IRCCSecure"
                                         >
@@ -1401,7 +1401,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:WorkTemp_PostGrad_IRCCSecure"
                                         >
@@ -1500,7 +1500,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             
-                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_StudyPermit_IRCCSecure"
                                           >
@@ -1573,7 +1573,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_StudyPermitFamily_IRCCSecure"
                                         >
@@ -1608,7 +1608,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             
-                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_FMCSP_IRCCSecure"
                                           >
@@ -1679,7 +1679,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_SFMCSP_With_Family_Member_IRCCSecure"
                                         >
@@ -1718,7 +1718,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_Extension_IRCCSecure"
                                         >
@@ -1757,7 +1757,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_ChangeSchool_IRCCSecure"
                                         >
@@ -1862,7 +1862,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Citizenship_Certificate_IRCCSecure"
                                           className="stretched-link no-undrln"
                                         >
@@ -2008,7 +2008,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Citizenship_SearchRecords_IRCCSecure"
                                           className="stretched-link no-undrln"
                                         >
@@ -2149,7 +2149,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           
-                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Refugee_IFHP_IRCCSecure"
                                         >
@@ -2238,7 +2238,7 @@ const IRCCAccount = () => {
                                           <a
                                             
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q3:SpecialMeasures_IRCCSecure"
-                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account"
                                             className="stretched-link no-undrln"
                                           >
                                             IRCC secure account (GCKey or
