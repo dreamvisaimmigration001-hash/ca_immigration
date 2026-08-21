@@ -217,7 +217,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q2:SignIn_VisitorVisa_IRCCSecure"
                                           >
@@ -237,7 +237,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/visit-canada/portal-application-process.html"
+                                            href="/immigration-refugees-citizenship/services/visit-canada/portal-application-process"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q2:SignIn_VisitorVisa_IRCCPortal"
                                           >
@@ -256,7 +256,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/online-account.html"
+                                            href="/immigration-refugees-citizenship/services/application/online-account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q2:SignIn_VisitorVisa_IRCCPortal_new_version"
                                           >
@@ -311,7 +311,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q2:SignIn_EE_IRCCSecure"
                                         >
@@ -350,7 +350,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q3:Study_StudyPermit_IRCCSecure"
                                           >
@@ -370,7 +370,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/study-canada/portal-application-process-study.html"
+                                            href="/immigration-refugees-citizenship/services/study-canada/portal-application-process-study"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q3:Study_StudyPermit_IRCCPortal"
                                           >
@@ -426,7 +426,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q2:SignIn_WorkPermit_IRCCSecure"
                                         >
@@ -561,7 +561,7 @@ const IRCCAccount = () => {
                               {" "}
                               <a
                                 target="_blank"
-                                href="/en/immigration-refugees-citizenship/services/canadian-passports/renew-adult-passport/online-account.html"
+                                href="/immigration-refugees-citizenship/services/canadian-passports/renew-adult-passport/online-account"
                                 className="stretched-link btn-link no-undrln full-width"
                                 data-gc-analytics-customclick="IRCC:AccountWizard_Q3:FinishSubmit_RenewPassport"
                               >
@@ -704,7 +704,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_VisitorVisa_IRCCSecure"
                                           >
@@ -724,7 +724,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/visit-canada/portal-application-process.html"
+                                            href="/immigration-refugees-citizenship/services/visit-canada/portal-application-process"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_VisitorVisa_IRCCPortal"
                                           >
@@ -743,7 +743,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/online-account.html"
+                                            href="/immigration-refugees-citizenship/services/application/online-account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_VisitorVisa_IRCCPortal_new_version"
                                           >
@@ -802,7 +802,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_VisitorVisa_eTA_IRCCSecure"
                                         >
@@ -843,7 +843,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_VisitorRecord_IRCCSecure"
                                         >
@@ -882,7 +882,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_SuperVisa_IRCCSecure"
                                           >
@@ -902,7 +902,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/visit-canada/portal-application-process.html"
+                                            href="/immigration-refugees-citizenship/services/visit-canada/portal-application-process"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_SuperVisa_IRCCPortal"
                                           >
@@ -921,7 +921,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/online-account.html"
+                                            href="/immigration-refugees-citizenship/services/application/online-account"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_SuperVisa_IRCCPortal_new_version"
                                           >
@@ -975,7 +975,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_TransitVisa_IRCCSecure"
                                           >
@@ -995,7 +995,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/visit-canada/transit/transit-visa/apply.html"
+                                            href="/immigration-refugees-citizenship/services/visit-canada/transit/transit-visa/apply"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Visit_TransitVisa_IRCCPortal"
                                           >
@@ -1079,7 +1079,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Immigrate_EE_IRCCSecure"
                                         >
@@ -1113,7 +1113,7 @@ const IRCCAccount = () => {
                       <div className="row-no-gutters">
                         <div className="col-md-9">
                           <div className="panel panel-default mrgn-bttm-md">
-                            <div className="panel-body position-relative d-flex align-items-center"> <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i> <a target="_blank" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Immigrate_TRPR_Portal" href="https://trprpath-voiertrp.apps.cic.gc.ca/en/landing" className="stretched-link no-undrln">TR-to-PR portal <span className="wb-inv">(Opens in a new tab)</span></a> </div>
+                            <div className="panel-body position-relative d-flex align-items-center"> <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i> <a target="_blank" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Immigrate_TRPR_Portal" href="https://trprpath-voiertrp.apps.cic.gc.ca/landing" className="stretched-link no-undrln">TR-to-PR portal <span className="wb-inv">(Opens in a new tab)</span></a> </div>
                           </div>
                         </div>
                       </div>
@@ -1128,7 +1128,7 @@ const IRCCAccount = () => {
                                         <a
                                           target="_blank"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Immigrate_TRPR_IRCCSecure"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                         >
                                           IRCC secure account (GCKey or Sign-In
@@ -1156,7 +1156,7 @@ const IRCCAccount = () => {
                                         <a
                                           target="_blank"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Immigrate_TRPR_IRCCSecure"
-                                          href="/en/immigration-refugees-citizenship/services/application/account/link-paper-online.html"
+                                          href="/immigration-refugees-citizenship/services/application/account/link-paper-online"
                                           className="stretched-link no-undrln"
                                         >
                                           Link an application to your IRCC
@@ -1194,7 +1194,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/immigrate-canada/how-to-apply-online.html"
+                                          href="/immigration-refugees-citizenship/services/immigrate-canada/how-to-apply-online"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Immigrate_Other_PRPortal"
                                         >
@@ -1295,7 +1295,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/immigrate-canada/how-to-apply-online.html"
+                                          href="/immigration-refugees-citizenship/services/immigrate-canada/how-to-apply-online"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Immigrate_Sponsor_PRPortal"
                                         >
@@ -1363,7 +1363,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:WorkTemp_WorkPermit_IRCCSecure"
                                         >
@@ -1404,7 +1404,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:WorkTemp_IEC_IRCCSecure"
                                         >
@@ -1445,7 +1445,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:WorkTemp_PostGrad_IRCCSecure"
                                         >
@@ -1548,7 +1548,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_StudyPermit_IRCCSecure"
                                           >
@@ -1568,7 +1568,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/study-canada/portal-application-process-study.html"
+                                            href="/immigration-refugees-citizenship/services/study-canada/portal-application-process-study"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_StudyPermit_IRCCPortal"
                                           >
@@ -1625,7 +1625,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_StudyPermitFamily_IRCCSecure"
                                         >
@@ -1662,7 +1662,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_FMCSP_IRCCSecure"
                                           >
@@ -1682,7 +1682,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/study-canada/portal-application-process-study.html"
+                                            href="/immigration-refugees-citizenship/services/study-canada/portal-application-process-study"
                                             className="stretched-link no-undrln"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_FMCSP_IRCCPortal"
                                           >
@@ -1737,7 +1737,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_SFMCSP_With_Family_Member_IRCCSecure"
                                         >
@@ -1778,7 +1778,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_Extension_IRCCSecure"
                                         >
@@ -1819,7 +1819,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Study_ChangeSchool_IRCCSecure"
                                         >
@@ -1887,7 +1887,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="https://citapply-citdemande.apps.cic.gc.ca/en/sign-in"
+                                          href="https://citapply-citdemande.apps.cic.gc.ca/sign-in"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Citizenship_Cit_CitApp"
                                           className="stretched-link no-undrln"
                                         >
@@ -1928,7 +1928,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Citizenship_Certificate_IRCCSecure"
                                           className="stretched-link no-undrln"
                                         >
@@ -1968,7 +1968,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/citizenship-test/online.html"
+                                          href="/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/citizenship-test/online"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Citizenship_Test_Online"
                                         >
@@ -1987,7 +1987,7 @@ const IRCCAccount = () => {
                                     If you{" "}
                                     <a
                                       target="_blank"
-                                      href="/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/apply/accommodation.html"
+                                      href="/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/apply/accommodation"
                                     >
                                       requested an accommodation
                                       <span className="fas fa-share mrgn-lft-sm">
@@ -2047,7 +2047,7 @@ const IRCCAccount = () => {
                                   <strong>Need help?</strong>{" "}
                                   <a
                                     target="_blank"
-                                    href="/en/immigration-refugees-citizenship/services/canadian-citizenship/proof-citizenship/valid/e-certificate.html#s3"
+                                    href="/immigration-refugees-citizenship/services/canadian-citizenship/proof-citizenship/valid/e-certificate#s3"
                                   >
                                     Find out how to view and download your
                                     e-certificate.
@@ -2084,7 +2084,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Citizenship_SearchRecords_IRCCSecure"
                                           className="stretched-link no-undrln"
                                         >
@@ -2231,7 +2231,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                          href="/immigration-refugees-citizenship/services/application/account#alerts"
                                           className="stretched-link no-undrln"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Refugee_IFHP_IRCCSecure"
                                         >
@@ -2270,7 +2270,7 @@ const IRCCAccount = () => {
                                         <a
                                           target="_blank"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:Refugee_Sponsor"
-                                          href="/en/immigration-refugees-citizenship/services/immigrate-canada/how-to-apply-online.html"
+                                          href="/immigration-refugees-citizenship/services/immigrate-canada/how-to-apply-online"
                                         >
                                           Permanent residence portal
                                         </a>{" "}
@@ -2322,7 +2322,7 @@ const IRCCAccount = () => {
                                           <a
                                             target="_blank"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q3:SpecialMeasures_IRCCSecure"
-                                            href="/en/immigration-refugees-citizenship/services/application/account.html#alerts"
+                                            href="/immigration-refugees-citizenship/services/application/account#alerts"
                                             className="stretched-link no-undrln"
                                           >
                                             IRCC secure account (GCKey or
@@ -2360,7 +2360,7 @@ const IRCCAccount = () => {
                                           <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                           <a
                                             target="_blank"
-                                            href="/en/immigration-refugees-citizenship/services/immigrate-canada/how-to-apply-online.html"
+                                            href="/immigration-refugees-citizenship/services/immigrate-canada/how-to-apply-online"
                                             data-gc-analytics-customclick="IRCC:AccountWizard_Q3:SpecialMeasures_PRPortal"
                                             className="stretched-link no-undrln"
                                           >
@@ -2428,7 +2428,7 @@ const IRCCAccount = () => {
                                         <i className="fas fa-user fa-2x pull-left mrgn-rght-md"></i>{" "}
                                         <a
                                           target="_blank"
-                                          href="https://prson-srpel.apps.cic.gc.ca/en/login"
+                                          href="https://prson-srpel.apps.cic.gc.ca/login"
                                           data-gc-analytics-customclick="IRCC:AccountWizard_Q4:SignIn_PRPortal"
                                           className="stretched-link no-undrln"
                                         >
@@ -2604,7 +2604,7 @@ const IRCCAccount = () => {
                                 {" "}
                                 <a
                                   target="_blank"
-                                  href="/en/immigration-refugees-citizenship/services/canadian-passports/renew-adult-passport/submit-form-fees.html"
+                                  href="/immigration-refugees-citizenship/services/canadian-passports/renew-adult-passport/submit-form-fees"
                                   className="stretched-link btn-link no-undrln full-width"
                                   data-gc-analytics-customclick="IRCC:AccountWizard_Q3:KnownProgram_RenewPassport"
                                 >
@@ -2712,7 +2712,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html"
+                              href="/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Visit_VisitorVisa"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -2731,7 +2731,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/visit-canada/eta/apply.html"
+                              href="/immigration-refugees-citizenship/services/visit-canada/eta/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Visit_eTA"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -2752,7 +2752,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/visit-canada/extend-stay/apply.html"
+                              href="/immigration-refugees-citizenship/services/visit-canada/extend-stay/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Visit_VisitorRecord"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -2773,7 +2773,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/apply.html"
+                              href="/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Visit_SuperVisa"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -2794,7 +2794,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/visit-canada/transit/transit-visa/apply.html"
+                              href="/immigration-refugees-citizenship/services/visit-canada/transit/transit-visa/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Visit_Transit"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -2840,7 +2840,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/atlantic-immigration/how-to-immigrate/permanent-residence.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/atlantic-immigration/how-to-immigrate/permanent-residence"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_AIP"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -2858,7 +2858,7 @@ const IRCCAccount = () => {
                               </div>
                             </a>{" "}
                           </div>
-                          {/*    <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/refugees/economic-mobility-pathways-pilot/immigrate/apply.html" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_EMPP" target="_blank" className="stretched-link btn-link no-undrln full-width">
+                          {/*    <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/refugees/economic-mobility-pathways-pilot/immigrate/apply" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_EMPP" target="_blank" className="stretched-link btn-link no-undrln full-width">
                   <div className="row d-flex align-items-center text-left">
                     <div className="col-xs-11">Economic Mobility Pathways Pilot</div>
                     <div className="col-xs-1"><span className="wb-inv">(Opens in a new tab)</span><span className="fas fa-share pull-right"></span></div>
@@ -2867,7 +2867,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_EE"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -2887,7 +2887,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/franco-immigration/permanent-residence.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/franco-immigration/permanent-residence"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_FCIP"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -2905,7 +2905,7 @@ const IRCCAccount = () => {
                               </div>
                             </a>{" "}
                           </div>
-                          {/*      <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/immigrate-canada/ukraine-measures/pr-family-reunification/apply.html" target="_blank" className="stretched-link btn-link no-undrln full-width" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_FamilyPRUkraine">
+                          {/*      <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/immigrate-canada/ukraine-measures/pr-family-reunification/apply" target="_blank" className="stretched-link btn-link no-undrln full-width" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_FamilyPRUkraine">
                   <div className="row d-flex align-items-center text-left">
                     <div className="col-xs-11">Family-based permanent residence program for Ukrainian nationals</div>
                     <div className="col-xs-1"><span className="wb-inv">(Opens in a new tab)</span><span className="fas fa-share pull-right"></span></div>
@@ -2914,7 +2914,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/caregivers/home-care-worker-immigration-pilots/child-care-home-support/apply.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/caregivers/home-care-worker-immigration-pilots/child-care-home-support/apply"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_FamilyHCWPilot"
@@ -2935,7 +2935,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/hong-kong-residents-permanent-residence/apply.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/hong-kong-residents-permanent-residence/apply"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_PRHK"
@@ -2957,7 +2957,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/express-entry/get-confirm-nomination.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/express-entry/get-confirm-nomination"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_PNP_EE"
@@ -2979,7 +2979,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/non-express-entry/eligibility.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees/non-express-entry/eligibility"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_PNP"
@@ -3001,7 +3001,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/application/application-forms-guides/application-permanent-residence-quebec-selected-business-class-applicants-investors-entrepreneurs.html"
+                              href="/immigration-refugees-citizenship/services/application/application-forms-guides/application-permanent-residence-quebec-selected-business-class-applicants-investors-entrepreneurs"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_QuebecEntrepreneur"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3022,7 +3022,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/self-employed/apply.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/self-employed/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_QuebecSelfEmployed"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3043,7 +3043,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/quebec-skilled-workers/apply.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/quebec-skilled-workers/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_QSW"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3065,7 +3065,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration/permanent-residence.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/rural-franco-pilots/rural-immigration/permanent-residence"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_RCIP"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3084,13 +3084,13 @@ const IRCCAccount = () => {
                             </a>{" "}
                           </div>
 
-                          {/*  <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/application/application-forms-guides/application-rural-northern-immigration.html" target="_blank" className="stretched-link btn-link no-undrln full-width" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_RNIP">
+                          {/*  <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/application/application-forms-guides/application-rural-northern-immigration" target="_blank" className="stretched-link btn-link no-undrln full-width" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_RNIP">
                   <div className="row d-flex align-items-center text-left">
                     <div className="col-xs-11">Rural and Northern Immigration Pilot</div>
                     <div className="col-xs-1"><span className="wb-inv">(Opens in a new tab)</span><span className="fas fa-share pull-right"></span></div>
                   </div>
                   </a> </div>
-                <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/immigrate-canada/self-employed/apply.html" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_SelfEmployed" target="_blank" className="stretched-link btn-link no-undrln full-width">
+                <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/immigrate-canada/self-employed/apply" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_SelfEmployed" target="_blank" className="stretched-link btn-link no-undrln full-width">
                   <div className="row d-flex align-items-center text-left">
                     <div className="col-xs-11">Self-employed persons</div>
                     <div className="col-xs-1"><span className="wb-inv">(Opens in a new tab)</span><span className="fas fa-share pull-right"></span></div>
@@ -3099,7 +3099,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/start-visa/apply.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/start-visa/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Immigrate_StartUp"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3160,7 +3160,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/spouse-partner-children/apply.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/spouse-partner-children/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Sponsor_Spouse"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3181,7 +3181,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents/tell-us-you-want-sponsor-parent-grandparent.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/sponsor-parents-grandparents/tell-us-you-want-sponsor-parent-grandparent"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Sponsor_PGP"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3202,7 +3202,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/canadians/adopt-child-abroad/processes/choose-process/immigration/apply.html"
+                              href="/immigration-refugees-citizenship/services/canadians/adopt-child-abroad/processes/choose-process/immigration/apply"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Sponsor_AdoptedChild"
@@ -3223,7 +3223,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/other-relatives/apply.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship/other-relatives/apply"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Sponsor_Relatives"
@@ -3271,7 +3271,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/work-canada/work-permit/apply.html"
+                              href="/immigration-refugees-citizenship/services/work-canada/work-permit/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_WorkPermit"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3290,7 +3290,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/work-canada/extend/apply.html"
+                              href="/immigration-refugees-citizenship/services/work-canada/extend/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_ExtendChangePermit"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3311,7 +3311,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/work-canada/iec/become-candidate.html"
+                              href="/immigration-refugees-citizenship/services/work-canada/iec/become-candidate"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_IEC"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3332,7 +3332,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html"
+                              href="/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_PostGrad"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3353,7 +3353,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility.html"
+                              href="/immigration-refugees-citizenship/services/work-canada/special-instructions/francophone-mobility"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_FrancoMobility"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3374,7 +3374,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/work-canada/special-instructions/spouses-dependent-children/apply.html"
+                              href="/immigration-refugees-citizenship/services/work-canada/special-instructions/spouses-dependent-children/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_OpenWorkPermit"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3396,7 +3396,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/work-canada/special-instructions/hong-kong-graduates.html"
+                              href="/immigration-refugees-citizenship/services/work-canada/special-instructions/hong-kong-graduates"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_OpenWorkPermitHK"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3418,7 +3418,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/immigrate-canada/ukraine-measures/ukraine-open-work-permit.html"
+                              href="/immigration-refugees-citizenship/services/immigrate-canada/ukraine-measures/ukraine-open-work-permit"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_OpenWorkPermitUkraine"
@@ -3439,7 +3439,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/work-canada/special-instructions/vulnerable-workers.html"
+                              href="/immigration-refugees-citizenship/services/work-canada/special-instructions/vulnerable-workers"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_OpenWorkPermitVulnerableFW"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3461,7 +3461,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/work-canada/special-instructions/camp-counsellor.html"
+                              href="/immigration-refugees-citizenship/services/work-canada/special-instructions/camp-counsellor"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Work_Overnightcamp"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3524,7 +3524,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/study-canada/study-permit/apply.html"
+                              href="/immigration-refugees-citizenship/services/study-canada/study-permit/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Study_permit"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3543,7 +3543,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/study-canada/extend-study-permit/how-to-apply.html"
+                              href="/immigration-refugees-citizenship/services/study-canada/extend-study-permit/how-to-apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Study_ExtendPermit"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3564,7 +3564,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/study-canada/change-schools.html"
+                              href="/immigration-refugees-citizenship/services/study-canada/change-schools"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Study_ChangeScool"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3585,7 +3585,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/study-canada/study-permit/fmc-student-pilot/apply.html"
+                              href="/immigration-refugees-citizenship/services/study-canada/study-permit/fmc-student-pilot/apply"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:FMCSP"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
@@ -3634,7 +3634,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/apply.html"
+                              href="/immigration-refugees-citizenship/services/canadian-citizenship/become-canadian-citizen/apply"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Citizenship"
@@ -3655,7 +3655,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/canadian-citizenship/proof-citizenship/apply.html"
+                              href="/immigration-refugees-citizenship/services/canadian-citizenship/proof-citizenship/apply"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Citizenship_Proof"
@@ -3676,7 +3676,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/canadian-citizenship/proof-citizenship/search-records/how-to-apply.html"
+                              href="/immigration-refugees-citizenship/services/canadian-citizenship/proof-citizenship/search-records/how-to-apply"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Citizenship_Records"
@@ -3724,7 +3724,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/refugees/protection.html"
+                              href="/immigration-refugees-citizenship/services/refugees/protection"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Refugee_Asylum"
@@ -3743,7 +3743,7 @@ const IRCCAccount = () => {
                               </div>
                             </a>{" "}
                           </div>
-                          {/*   <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/refugees/economic-mobility-pathways-pilot/immigrate/apply.html" target="_blank" className="stretched-link btn-link no-undrln full-width" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Refugee_EMPP">
+                          {/*   <div className="panel panel-default panel-body position-relative"> <a href="/content/canadasite/en/immigration-refugees-citizenship/services/refugees/economic-mobility-pathways-pilot/immigrate/apply" target="_blank" className="stretched-link btn-link no-undrln full-width" data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Refugee_EMPP">
                   <div className="row d-flex align-items-center text-left">
                     <div className="col-xs-11">Economic Mobility Pathways Pilot</div>
                     <div className="col-xs-1"><span className="wb-inv">(Opens in a new tab)</span><span className="fas fa-share pull-right"></span></div>
@@ -3752,7 +3752,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/refugees/sponsor-refugee/private-sponsorship-program/agreement-holders/sponsor.html"
+                              href="/immigration-refugees-citizenship/services/refugees/sponsor-refugee/private-sponsorship-program/agreement-holders/sponsor"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Refugee_SAH"
@@ -3774,7 +3774,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/refugees/sponsor-refugee/private-sponsorship-program/groups-five/apply.html"
+                              href="/immigration-refugees-citizenship/services/refugees/sponsor-refugee/private-sponsorship-program/groups-five/apply"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Refugee_G5"
@@ -3795,7 +3795,7 @@ const IRCCAccount = () => {
                           <div className="panel panel-default panel-body position-relative">
                             {" "}
                             <a
-                              href="/en/immigration-refugees-citizenship/services/refugees/sponsor-refugee/private-sponsorship-program/community-sponsors/apply.html"
+                              href="/immigration-refugees-citizenship/services/refugees/sponsor-refugee/private-sponsorship-program/community-sponsors/apply"
                               target="_blank"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Refugee_CommunitySponsor"
@@ -3845,7 +3845,7 @@ const IRCCAccount = () => {
                             {" "}
                             <a
                               target="_blank"
-                              href="/en/immigration-refugees-citizenship/services/permanent-residents/card/apply.html"
+                              href="/immigration-refugees-citizenship/services/permanent-residents/card/apply"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Refugee_PRCard"
                             >
@@ -3866,7 +3866,7 @@ const IRCCAccount = () => {
                             {" "}
                             <a
                               target="_blank"
-                              href="/en/immigration-refugees-citizenship/services/permanent-residents/travel-document/apply.html"
+                              href="/immigration-refugees-citizenship/services/permanent-residents/travel-document/apply"
                               className="stretched-link btn-link no-undrln full-width"
                               data-gc-analytics-customclick="IRCC:AccountWizard_Q4:KnownProgram:Refugee_PRTD"
                             >
@@ -3900,7 +3900,7 @@ const IRCCAccount = () => {
             <p>
               <a
                 target="_blank"
-                href="/en/immigration-refugees-citizenship/corporate/partners-service-providers.html"
+                href="/immigration-refugees-citizenship/corporate/partners-service-providers"
               >
                 View accounts for authorized representatives and partners
                 <span className="fas fa-share mrgn-lft-sm">

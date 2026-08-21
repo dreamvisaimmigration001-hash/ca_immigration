@@ -53,7 +53,7 @@ export default function GlobalMenu() {
           <Link role="menuitem" tabIndex="-1" aria-haspopup="true" aria-controls="gc-mnu-taxes" aria-expanded="false" to="/">Taxes</Link>
         </li>
         <li role="presentation">
-          <Link role="menuitem" tabIndex="-1" aria-haspopup="true" aria-controls="gc-mnu-enviro" aria-expanded="false" to="/services/environment.html">Environment and natural resources</Link>
+          <Link role="menuitem" tabIndex="-1" aria-haspopup="true" aria-controls="gc-mnu-enviro" aria-expanded="false" to="/services/environment">Environment and natural resources</Link>
         </li>
         <li role="presentation">
           <Link role="menuitem" tabIndex="-1" aria-haspopup="true" aria-controls="gc-mnu-defence" aria-expanded="false" to="/">National security and defence</Link>

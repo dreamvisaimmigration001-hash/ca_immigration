@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './GCKeyLogin.css';
+import gcKeyCss from './GCKeyLogin.css?inline';
 import GCKeyHeader from '../components/GCKeyHeader';
 import GCKeyFooter from '../components/GCKeyFooter';
 
@@ -66,7 +66,9 @@ export default function MyCICHome() {
   );
 
   return (
-    <div className="gckey-page">
+    <>
+      <style dangerouslySetInnerHTML={{ __html: gcKeyCss }} />
+      <div className="gckey-page">
       <GCKeyHeader
         breadcrumbs={[
           { label: 'Home', href: '/' },
@@ -592,5 +594,6 @@ export default function MyCICHome() {
 
       <GCKeyFooter />
     </div>
+    </>
   );
 }

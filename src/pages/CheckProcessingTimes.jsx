@@ -57,7 +57,7 @@ const CheckProcessingTimes = () => {
               We aren’t finalizing applications from the Democratic Republic of the Congo, Uganda or South Sudan at this time. Because of this, your processing time may be longer than the times shown below if the last country of residence on your application was one of these countries.
             </p>
             <p>
-              <Link to="/en/immigration-refugees-citizenship/services/special-measures/ebola-2026">
+              <Link to="/immigration-refugees-citizenship/services/special-measures/ebola-2026">
                 Learn more about these special measures
               </Link>.
             </p>

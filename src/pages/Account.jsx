@@ -11,9 +11,9 @@ export default function Account() {
         <h2 className="wb-inv">You are here:</h2>
         <div className="container">
           <ol className="breadcrumb">
-            <li><a href="/en.html">Canada.ca</a></li>
-            <li><a href="/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
-            <li><a href="/en/immigration-refugees-citizenship/services/application.html">Your IRCC application</a></li>
+            <li><a href="/en">Canada.ca</a></li>
+            <li><a href="/services/immigration-citizenship">Immigration and citizenship</a></li>
+            <li><a href="/immigration-refugees-citizenship/services/application">Your IRCC application</a></li>
           </ol>
         </div>
       </nav>
@@ -60,7 +60,7 @@ export default function Account() {
               <li>study permits, including those under the Francophone Minority Communities Student Pilot (FMCSP)</li>
               <li>
                 some visitor visas (
-                <a href="/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html">
+                <a href="/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa">
                   get visitor visa instructions for your situation)
                 </a>
               </li>
@@ -68,27 +68,27 @@ export default function Account() {
             <p><strong>If your application isn't listed, review your program content to get instructions on how to apply:</strong></p>
             <ul>
               <li>
-                <a href="/en/immigration-refugees-citizenship/services/visit-canada.html">Visit Canada</a>
+                <a href="/immigration-refugees-citizenship/services/visit-canada">Visit Canada</a>
                 &nbsp;(includes visas and electronic travel authorizations)
               </li>
               <li>
-                <a href="/en/immigration-refugees-citizenship/services/immigrate-canada.html">Immigrate to Canada</a>
+                <a href="/immigration-refugees-citizenship/services/immigrate-canada">Immigrate to Canada</a>
                 &nbsp;(includes family sponsorship, Express entry and other economic immigration programs)
               </li>
               <li>
-                <a href="/en/immigration-refugees-citizenship/services/work-canada.html">Work in Canada</a>
+                <a href="/immigration-refugees-citizenship/services/work-canada">Work in Canada</a>
                 &nbsp;(includes work permits and International Experience Canada)
               </li>
               <li>
-                <a href="/en/immigration-refugees-citizenship/services/study-canada.html">Study in Canada</a>
+                <a href="/immigration-refugees-citizenship/services/study-canada">Study in Canada</a>
                 &nbsp;(includes study permits and extensions)
               </li>
               <li>
-                <a href="/en/immigration-refugees-citizenship/services/canadian-citizenship.html">Canadian citizenship</a>
+                <a href="/immigration-refugees-citizenship/services/canadian-citizenship">Canadian citizenship</a>
                 &nbsp;(includes applying for citizenship and proof of citizenship)
               </li>
               <li>
-                <a href="/en/immigration-refugees-citizenship/services/refugees.html">Refugees and asylum</a>
+                <a href="/immigration-refugees-citizenship/services/refugees">Refugees and asylum</a>
                 &nbsp;(includes asylum claims and sponsoring refugees)
               </li>
             </ul>
@@ -104,7 +104,7 @@ export default function Account() {
               <li>applications you submitted in this account</li>
               <li>
                 these applications (after you{' '}
-                <a href="/en/immigration-refugees-citizenship/services/application/account/link-paper-online.html">
+                <a href="/immigration-refugees-citizenship/services/application/account/link-paper-online">
                   link the application to your account
                 </a>
                 ):
@@ -141,7 +141,7 @@ export default function Account() {
             </ul>
             <p>
               Can't find your application?{' '}
-              <a href="/en/immigration-refugees-citizenship/services/application/check-status.html">
+              <a href="/immigration-refugees-citizenship/services/application/check-status">
                 Get instructions on how to check your application status.
               </a>
             </p>
@@ -197,7 +197,7 @@ export default function Account() {
                     </p>
                     <p>In most cases, if you apply without a PAL, your application will be returned with fees.</p>
                     <p>
-                      <a href="/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html#attestation">
+                      <a href="/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents#attestation">
                         Learn more about the provincial attestation letter.
                       </a>
                     </p>
@@ -206,7 +206,7 @@ export default function Account() {
                       <p>
                         The exemptions for including a PAL/TAL with your study permit application have changed. If
                         your application is already in progress (but hasn't been submitted), check the list of{' '}
-                        <a href="/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter.html#exemptions">
+                        <a href="/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/provincial-attestation-letter#exemptions">
                           PAL/TAL exemptions
                         </a>{' '}
                         to see if you need to include one.
@@ -232,7 +232,7 @@ export default function Account() {
                         <li>link the results to your application</li>
                       </ul>
                       <p>
-                        <a href="/en/immigration-refugees-citizenship/services/application/check-processing-times.html">
+                        <a href="/immigration-refugees-citizenship/services/application/check-processing-times">
                           Check the application processing time
                         </a>.
                       </p>
@@ -273,7 +273,7 @@ export default function Account() {
               <p>
                 A settlement agreement in the <em>Sweet</em> Class Action has been approved by the Federal Court.
                 Learn more about available compensation in the{' '}
-                <a href="/en/government/system/digital-government/online-security-privacy/sweet-hmk-class-action-suit/notice-settlement-approval-sweet-v-his-majesty-king-federal-court-file-t-982-20.html">
+                <a href="/government/system/digital-government/online-security-privacy/sweet-hmk-class-action-suit/notice-settlement-approval-sweet-v-his-majesty-king-federal-court-file-t-982-20">
                   Notice of Settlement Approval
                 </a>.
               </p>
@@ -344,7 +344,7 @@ export default function Account() {
                     <div className="row mrgn-tp-md">
                       <div className="col-sm-10 col-sm-offset-1">
                         <a
-                          href="/en/immigration-refugees-citizenship/services/application/register.html"
+                          href="/immigration-refugees-citizenship/services/application/register"
                           className="btn btn-default btn-block p-sm-3"
                         >
                           <span className="h6 mrgn-tp-0 mrgn-bttm-0 d-flex align-items-center">
@@ -447,7 +447,7 @@ export default function Account() {
                       </ol>
                       <p>
                         You may not be able to find your application in your new account. You may need to{' '}
-                        <a href="/en/immigration-refugees-citizenship/services/application/account/link-paper-online.html">
+                        <a href="/immigration-refugees-citizenship/services/application/account/link-paper-online">
                           link your application to your new account
                         </a>.
                       </p>
@@ -489,7 +489,7 @@ export default function Account() {
                       <ul>
                         <li>recover your account</li>
                         <li>
-                          <a href="/en/immigration-refugees-citizenship/services/application/account/link-paper-online.html">
+                          <a href="/immigration-refugees-citizenship/services/application/account/link-paper-online">
                             link your existing applications to your new account
                           </a>
                         </li>
@@ -553,7 +553,7 @@ export default function Account() {
                       </ol>
                     </details>
                   </details>
-                  <p><a href="/en/government/sign-in-online-account/gckey.html">Get more help with GCKey</a></p>
+                  <p><a href="/government/sign-in-online-account/gckey">Get more help with GCKey</a></p>
                 </details>
               </div>
 
@@ -563,7 +563,7 @@ export default function Account() {
                   <summary><span id="mfa">GCKey two-factor authentication</span></summary>
                   <p>Two-factor authentication protects your account. You need to choose a second authentication method (other than your username and password) to use each time you sign in.</p>
                   <p>
-                    <a href="/en/immigration-refugees-citizenship/services/application/two-factor-authentication.html#register">
+                    <a href="/immigration-refugees-citizenship/services/application/two-factor-authentication#register">
                       Set up your two-factor authentication method
                     </a>
                   </p>
@@ -605,7 +605,7 @@ export default function Account() {
                       <ul>
                         <li>recover your account</li>
                         <li>
-                          <a href="/en/immigration-refugees-citizenship/services/application/account/link-paper-online.html">
+                          <a href="/immigration-refugees-citizenship/services/application/account/link-paper-online">
                             link your existing applications to your new account
                           </a>
                         </li>
@@ -623,7 +623,7 @@ export default function Account() {
                     <p>GCKey representatives are available to assist you by phone year round, 24 hours a day, 7 days a week.</p>
                   </details>
                   <p>
-                    <a href="/en/immigration-refugees-citizenship/services/application/two-factor-authentication.html">
+                    <a href="/immigration-refugees-citizenship/services/application/two-factor-authentication">
                       Get more help with two-factor authentication
                     </a>
                   </p>
@@ -655,7 +655,7 @@ export default function Account() {
                   <ul>
                     <li>recover your account</li>
                     <li>
-                      <a href="/en/immigration-refugees-citizenship/services/application/account/link-paper-online.html">
+                      <a href="/immigration-refugees-citizenship/services/application/account/link-paper-online">
                         link your existing applications to your new account
                       </a>
                     </li>
@@ -687,7 +687,7 @@ export default function Account() {
                   </ul>
                   <p>
                     To fix this, you need to{' '}
-                    <a href="/en/immigration-refugees-citizenship/services/application/account/link-paper-online.html">
+                    <a href="/immigration-refugees-citizenship/services/application/account/link-paper-online">
                       link the application to your account
                     </a>.
                   </p>
@@ -700,7 +700,7 @@ export default function Account() {
                   <summary>If your personal reference code doesn't work</summary>
                   <p>
                     You may have a personal reference code (from the{' '}
-                    <a href="/en/immigration-refugees-citizenship/services/come-canada-tool.html">
+                    <a href="/immigration-refugees-citizenship/services/come-canada-tool">
                       Come to Canada tool
                     </a>
                     ) for these applications:
@@ -739,7 +739,7 @@ export default function Account() {
                       <li>
                         read
                         <ul>
-                          <li>the <a href="/en/government/sign-in-online-account/gckey.html">GCKey help page</a></li>
+                          <li>the <a href="/government/sign-in-online-account/gckey">GCKey help page</a></li>
                           <li>our <a href="https://ircc.canada.ca/english/helpcentre/results-by-topic.asp?st=23.2.2">answers to common GCKey questions</a></li>
                         </ul>
                       </li>
@@ -779,7 +779,7 @@ export default function Account() {
           <div className="row">
             <div className="col-xs-12 col-md-6">
               <h3 className="mrgn-tp-0">
-                <a href="/en/government/sign-in-online-account.html">All Government of Canada online accounts</a>
+                <a href="/government/sign-in-online-account">All Government of Canada online accounts</a>
               </h3>
               <p>There are many accounts across the Government of Canada for different services. Find the service you need.</p>
             </div>

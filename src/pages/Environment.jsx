@@ -26,8 +26,8 @@ export default function Environment() {
                             <li><Link to="/business">Business</Link></li>
                             <li><Link to="/benefits">Benefits</Link></li>
                             <li><Link to="/health">Health</Link></li>
-                            <li><Link to="/services/taxes.html">Taxes</Link></li>
-                            <li><Link to="/services/environment.html" className="wb-navcurr" aria-current="page">Environment and natural resources</Link></li>
+                            <li><Link to="/services/taxes">Taxes</Link></li>
+                            <li><Link to="/services/environment" className="wb-navcurr" aria-current="page">Environment and natural resources</Link></li>
                             <li><Link to="/defence">National security and defence</Link></li>
                             <li><Link to="/culture">Culture, history and sport</Link></li>
                             <li><Link to="/policing">Policing, justice and emergencies</Link></li>
@@ -108,11 +108,11 @@ export default function Environment() {
                           <p>Canada’s natural resources, water, forests and mining industry.</p>
                         </div>
                         <div className="col-md-6">
-                          <h3><a href="https://agriculture.canada.ca/en/agricultural-production" target="_blank" rel="noopener noreferrer">Agricultural production tools and data</a></h3>
+                          <h3><a href="https://agriculture.canada.ca/agricultural-production" target="_blank" rel="noopener noreferrer">Agricultural production tools and data</a></h3>
                           <p>Interactive maps, tools, practices and technologies relevant to production in agriculture. Weather, drought, land and water, geospatial products.</p>
                         </div>
                         <div className="col-md-6">
-                          <h3><a href="https://agriculture.canada.ca/en/environment" target="_blank" rel="noopener noreferrer">Environment and sustainability in agriculture</a></h3>
+                          <h3><a href="https://agriculture.canada.ca/environment" target="_blank" rel="noopener noreferrer">Environment and sustainability in agriculture</a></h3>
                           <p>Climate change mitigation, farming practices, environmental impacts and indicators.</p>
                         </div>
                         <div className="col-md-6">
@@ -124,7 +124,7 @@ export default function Environment() {
                           <p>Find out about ways to track and reduce pollution and waste.</p>
                         </div>
                         <div className="col-md-6">
-                          <h3><a href="https://www.statcan.gc.ca/en/subjects-start/environment" target="_blank" rel="noopener noreferrer">Environment statistics</a></h3>
+                          <h3><a href="https://www.statcan.gc.ca/subjects-start/environment" target="_blank" rel="noopener noreferrer">Environment statistics</a></h3>
                           <p>Data, tools and reports providing the latest information on the environment in Canada.</p>
                         </div>
                         <div className="col-md-6">

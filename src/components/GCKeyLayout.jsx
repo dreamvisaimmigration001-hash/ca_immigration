@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import gcKeyCssUrl from '../pages/GCKeyLogin.css?url';
+import gcKeyCss from '../pages/GCKeyLogin.css?inline';
 import sigBlkEn from '../assets/sig-blk-en.svg';
 import wmmsBlk from '../assets/wmms-blk.svg';
 
@@ -10,7 +10,7 @@ export default function GCKeyLayout() {
 
   return (
     <>
-      <link rel="stylesheet" href={gcKeyCssUrl} />
+      <style dangerouslySetInnerHTML={{ __html: gcKeyCss }} />
       <div className="gckey-page">
         <ul id="wb-tphp" className="wb-init wb-disable-inited">
         <li className="wb-slc">
@@ -49,7 +49,7 @@ export default function GCKeyLayout() {
             <div className="brand col-xs-7 col-sm-9">
               <Link
                 id="logo-link"
-                to="/en/index"
+                to="/index"
                 target="_blank"
                 title="Welcome to Canada.ca (opens in a new window)"
               >

@@ -26,8 +26,8 @@ export default function Taxes() {
                             <li><Link to="/business">Business</Link></li>
                             <li><Link to="/benefits">Benefits</Link></li>
                             <li><Link to="/health">Health</Link></li>
-                            <li><Link to="/services/taxes.html" className="wb-navcurr" aria-current="page">Taxes</Link></li>
-                            <li><Link to="/services/environment.html">Environment and natural resources</Link></li>
+                            <li><Link to="/services/taxes" className="wb-navcurr" aria-current="page">Taxes</Link></li>
+                            <li><Link to="/services/environment">Environment and natural resources</Link></li>
                             <li><Link to="/defence">National security and defence</Link></li>
                             <li><Link to="/culture">Culture, history and sport</Link></li>
                             <li><Link to="/policing">Policing, justice and emergencies</Link></li>
