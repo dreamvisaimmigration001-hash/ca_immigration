@@ -182,7 +182,7 @@ export default function MyCICDashboard() {
                     <strong>Biometrics:</strong>
                     <ul style={{ margin: '4px 0 0 0', paddingLeft: '22px', color: '#333' }}>
                       <li>
-                        <strong>Biometrics Number:</strong> 0001098481811919
+                        <strong>Biometrics Number:</strong> 1000025187767
                       </li>
                       <li>
                         <strong>Date of Biometrics Enrolment:</strong> March 24, 2026
