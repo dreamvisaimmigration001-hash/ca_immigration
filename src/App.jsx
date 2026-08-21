@@ -13,6 +13,9 @@ import Application from './pages/Application';
 import CheckProcessingTimes from './pages/CheckProcessingTimes';
 import IRCCAccount from './pages/IRCCAccount';
 
+import Taxes from './pages/Taxes';
+import Environment from './pages/Environment';
+
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +32,12 @@ function App() {
           <Route path="business" element={<Business />} />
           <Route path="benefits" element={<Benefits />} />
           <Route path="health" element={<Health />} />
+          <Route path="services/taxes.html" element={<Taxes />} />
+          <Route path="services/taxes" element={<Taxes />} />
+          <Route path="taxes" element={<Taxes />} />
+          <Route path="services/environment.html" element={<Environment />} />
+          <Route path="services/environment" element={<Environment />} />
+          <Route path="environment" element={<Environment />} />
         </Route>
       </Routes>
     </BrowserRouter>
