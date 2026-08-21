@@ -20,6 +20,8 @@ import GCKeyLayout from './components/GCKeyLayout';
 import Taxes from './pages/Taxes';
 import Environment from './pages/Environment';
 
+import MyCICHome from './pages/MyCICHome';
+
 function App() {
   return (
     <BrowserRouter>
@@ -49,6 +51,8 @@ function App() {
           <Route path="/fu" element={<GCKeyForgotUsername />} />
           <Route path="/j/eng/fu" element={<GCKeyForgotUsername />} />
         </Route>
+        <Route path="/mycic/home" element={<MyCICHome />} />
+        <Route path="/mycic/home.html" element={<MyCICHome />} />
       </Routes>
     </BrowserRouter>
   );
