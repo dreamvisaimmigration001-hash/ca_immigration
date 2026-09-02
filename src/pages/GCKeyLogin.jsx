@@ -1,33 +1,57 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SEO from "../components/SEO";
+import { useAuth } from "../context/AuthContext";
+import { useTranslation } from "../context/LanguageContext";
 
 export default function GCKeyLogin() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
+  const { login } = useAuth();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showError, setShowError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleLoginSubmit = (e) => {
+  const handleLoginSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     setShowError(false);
 
-    // Simulate network delay for the spinner
-    setTimeout(() => {
-      setIsLoading(false);
+    try {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+      });
 
-      // Fake credential check
-      if (username === "bikashsingh@2026" && password === "bikashsingh@4321") {
-        navigate("/mycic/home");
+      if (response.ok) {
+        const data = await response.json();
+        if (data.token) {
+          login(data.user, data.token);
+        }
+        if (data.user && data.user.role === "admin") {
+          navigate("/admin");
+        } else if (data.user && (data.user.role === "employe" || data.user.role === "employee")) {
+          navigate("/employee");
+        } else {
+          navigate("/mycic/home");
+        }
       } else {
         setShowError(true);
-        // For security, fields are cleared on error
         setUsername("");
         setPassword("");
       }
-    }, 1500);
+    } catch (error) {
+      console.error("Login failed:", error);
+      setShowError(true);
+      setUsername("");
+      setPassword("");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleClear = () => {
@@ -50,7 +74,7 @@ export default function GCKeyLogin() {
       />
       <div className="row">
         <div className="col-xs-12">
-          <h1 id="wb-cont">Welcome to GCKey</h1>
+          <h1 id="wb-cont">{t('welcomeGCKey')}</h1>
           {showError && (
             <div className="row col-md-8">
               <div id="errors-login" role="alert" tabIndex="-1">
@@ -100,7 +124,7 @@ export default function GCKeyLogin() {
                 <div className="row">
                   <div className="wb-sec hidden-md hidden-lg col-xs-12">
                     <div className="col-xs-12">
-                      <h2 style={{ marginTop: "0" }}>Simple Secure Access</h2>
+                      <h2 style={{ marginTop: "0" }}>{t('simpleSecureAccess')}</h2>
                       <p>
                         A simple way to securely access Government of Canada
                         online services.
@@ -126,7 +150,7 @@ export default function GCKeyLogin() {
                   </div>
                   <div id="left-box" className="col-md-8 col-xs-12">
                     <div className="col-xs-12">
-                      <h2 style={{ marginTop: "0" }}>Sign In</h2>
+                      <h2 style={{ marginTop: "0" }}>{t('signInBtn')}</h2>
                     </div>
                     <div className="col-xs-12">
                       <form
@@ -138,7 +162,7 @@ export default function GCKeyLogin() {
                         <div className="form-group">
                           <label htmlFor="token1">
                             <span className="field-name">
-                              Username: <strong>(required)</strong>
+                              {t('username')}: <strong>(required)</strong>
                             </span>
                           </label>
 
@@ -164,7 +188,7 @@ export default function GCKeyLogin() {
                         <div className="form-group">
                           <label htmlFor="token2">
                             <span className="field-name">
-                              Password: <strong>(required)</strong>
+                              {t('password')}: <strong>(required)</strong>
                             </span>
                           </label>
 
@@ -214,7 +238,7 @@ export default function GCKeyLogin() {
                                   Signing In...
                                 </span>
                               ) : (
-                                "Sign In"
+                                t('signInBtn')
                               )}
                             </button>
                             <button
@@ -228,7 +252,7 @@ export default function GCKeyLogin() {
                                 marginRight: "auto",
                               }}
                             >
-                              Clear All
+                              {t('clearBtn')}
                             </button>
                             <Link
                               to="/j/eng/rg"

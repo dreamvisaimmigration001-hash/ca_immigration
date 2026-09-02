@@ -1,12 +1,22 @@
 import React from 'react';
-import { Outlet, Link, useLocation } from 'react-router-dom';
+import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom';
 import gcKeyCss from '../pages/GCKeyLogin.css?inline';
 import sigBlkEn from '../assets/sig-blk-en.svg';
 import wmmsBlk from '../assets/wmms-blk.svg';
+import { useAuth } from '../context/AuthContext';
+import { useTranslation } from '../context/LanguageContext';
 
 export default function GCKeyLayout() {
+  const { language, toggleLanguage, t } = useTranslation();
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, logout } = useAuth();
   const isForgot = location.pathname.includes('/fu');
+
+  const handleLogoutClick = () => {
+    logout();
+    navigate("/j/eng/l");
+  };
 
   return (
     <>
@@ -36,10 +46,39 @@ export default function GCKeyLayout() {
             <div className="row">
               <div className="col-md-12">
                 <ul className="list-inline margin-bottom-none">
+                  {user && (
+                    <li>
+                      <button
+                        onClick={handleLogoutClick}
+                        className="btn btn-link"
+                        style={{
+                          color: '#284162',
+                          textDecoration: 'underline',
+                          padding: 0,
+                          border: 'none',
+                          background: 'none',
+                          fontSize: '16px',
+                          fontWeight: 'bold',
+                        }}
+                      >
+                        Sign out
+                      </button>
+                    </li>
+                  )}
+                  {user && <li style={{ color: '#ccc', margin: '0 5px' }}> | </li>}
                   <li>
-                    <Link lang="fr" id="languageLink" to="/j/fra/fu?execution=e2s1&_eventId=changeLang">
-                      Français
-                    </Link>
+                    <a
+                      href="#"
+                      lang={language === 'en' ? 'fr' : 'en'}
+                      id="languageLink"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        toggleLanguage();
+                      }}
+                      style={{ cursor: 'pointer', fontWeight: 'bold' }}
+                    >
+                      {t('frLinkText')}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -53,7 +92,7 @@ export default function GCKeyLayout() {
                 target="_blank"
                 title="Welcome to Canada.ca (opens in a new window)"
               >
-                <object id="gcwu-sig" type="image/svg+xml" tabIndex="-1" role="img" data={sigBlkEn} aria-label="Government of Canada"></object>
+                <object id="gcwu-sig" type="image/svg+xml" tabIndex="-1" role="img" data={sigBlkEn} aria-label={t('govOfCanada')}></object>
               </Link>
             </div>
             <div
@@ -87,16 +126,41 @@ export default function GCKeyLayout() {
                 </header>
                 <div className="modal-body">
                   <section className="lng-ofr">
-                    <h3>Language selection</h3>
+                    <h3>{t('help')}</h3>
                     <ul className="list-inline">
+                      {user && (
+                        <li>
+                          <button
+                            onClick={handleLogoutClick}
+                            className="btn btn-link"
+                            style={{
+                              color: '#284162',
+                              textDecoration: 'underline',
+                              padding: 0,
+                              border: 'none',
+                              background: 'none',
+                              fontSize: '16px',
+                              fontWeight: 'bold',
+                            }}
+                          >
+                            Sign out
+                          </button>
+                        </li>
+                      )}
+                      {user && <li style={{ color: '#ccc', margin: '0 5px' }}> | </li>}
                       <li>
-                        <Link
-                          lang="fr"
+                        <a
+                          href="#"
+                          lang={language === 'en' ? 'fr' : 'en'}
                           id="languageLink"
-                          to="/j/fra/fu"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            toggleLanguage();
+                          }}
+                          style={{ cursor: 'pointer' }}
                         >
-                          Français
-                        </Link>
+                          {t('frLinkText')}
+                        </a>
                       </li>
                     </ul>
                   </section>

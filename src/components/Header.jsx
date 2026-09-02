@@ -2,8 +2,10 @@ import { Link, useLocation } from 'react-router-dom';
 import { Search, ChevronDown } from 'lucide-react';
 import GlobalMenu from './GlobalMenu';
 import Breadcrumb from './Breadcrumb';
+import { useTranslation } from '../context/LanguageContext';
 
 export default function Header() {
+  const { language, toggleLanguage, t } = useTranslation();
   const { pathname } = useLocation();
   
   return (
@@ -54,15 +56,22 @@ export default function Header() {
                               <div className="col-md-12">
                                 <ul className="list-inline mrgn-bttm-0">
                                   <li>
-                                    <Link to="/fr">
-                                      <span className="hidden-xs">Français</span>
+                                    <a
+                                      href="#"
+                                      onClick={(e) => {
+                                        e.preventDefault();
+                                        toggleLanguage();
+                                      }}
+                                      style={{ cursor: 'pointer', color: '#284162' }}
+                                    >
+                                      <span className="hidden-xs">{t('frLinkText')}</span>
                                       <abbr
-                                        title="Français"
+                                        title={t('frLinkText')}
                                         className="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"
                                       >
-                                        fr
+                                        {language === 'en' ? 'fr' : 'en'}
                                       </abbr>
-                                    </Link>
+                                    </a>
                                   </li>
                                 </ul>
                               </div>
@@ -77,7 +86,7 @@ export default function Header() {
                             <Link to="/" property="url">
                               <img
                                 src="/assets/sig-blk-en.svg"
-                                alt="Government of Canada"
+                                alt={t('govOfCanada')}
                                 property="logo"
                               />
                               <span className="wb-inv">

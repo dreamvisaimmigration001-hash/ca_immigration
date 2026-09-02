@@ -22,11 +22,18 @@ import Environment from "./pages/Environment";
 
 import MyCICHome from "./pages/MyCICHome";
 import MyCICDashboard from "./pages/MyCICDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
+import EmployeeDashboard from "./pages/EmployeeDashboard";
+
+import { AuthProvider } from "./context/AuthContext";
+import { LanguageProvider } from "./context/LanguageContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <AuthProvider>
+      <LanguageProvider>
+        <BrowserRouter>
+        <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Account />} />
           <Route path="jobs" element={<Jobs />} />
@@ -78,11 +85,15 @@ function App() {
           <Route path="/mycic/home.html" element={<MyCICHome />} />
           <Route path="/mycic/dashboard" element={<MyCICDashboard />} />
           <Route path="/mycic/dashboard.html" element={<MyCICDashboard />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/employee" element={<EmployeeDashboard />} />
         </Route>
 
         {/* MyCIC Standalone Routes (Renders GCKeyHeader/Footer internally) */}
       </Routes>
     </BrowserRouter>
+      </LanguageProvider>
+    </AuthProvider>
   );
 }
 

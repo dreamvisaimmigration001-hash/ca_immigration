@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import DelayedLink from "../components/DelayedLink";
 import SEO from "../components/SEO";
+import { useAuth } from "../context/AuthContext";
+import { useTranslation } from "../context/LanguageContext";
 
 export default function MyCICHome() {
+  const { user, token } = useAuth();
+  const { language, t } = useTranslation();
+
   // Submitted Applications State
   const [submittedSearch, setSubmittedSearch] = useState("");
   const [submittedEntriesPerPage, setSubmittedEntriesPerPage] = useState(5);
@@ -11,32 +16,7 @@ export default function MyCICHome() {
     column: "dateSubmitted",
     direction: "desc",
   });
-  const [submittedData, setSubmittedData] = useState([
-    {
-      appType: "Work Permit",
-      appNumber: "V353410701",
-      applicantName: "BIKASH SINGH GAJMER",
-      dateSubmitted: "August 14, 2026",
-      status: "PASSPORT SUMBISSON PENDING",
-      messages: "0 message",
-    },
-    // {
-    //   appType: 'Express Entry - Federal Skilled Worker',
-    //   appNumber: 'E009481023',
-    //   applicantName: 'Oluwaseun Webinar',
-    //   dateSubmitted: 'June 02, 2026',
-    //   status: 'Submitted - Under review',
-    //   messages: 'Unread (1)',
-    // },
-    // {
-    //   appType: 'Work Permit (Open Work Permit)',
-    //   appNumber: 'W301948271',
-    //   applicantName: 'Oluwaseun Webinar',
-    //   dateSubmitted: 'March 20, 2026',
-    //   status: 'Approved',
-    //   messages: 'Read (4)',
-    // },
-  ]);
+  const [submittedData, setSubmittedData] = useState([]);
 
   // Unsubmitted Applications State
   const [unsubmittedSearch, setUnsubmittedSearch] = useState("");
@@ -45,20 +25,47 @@ export default function MyCICHome() {
     column: "dateCreated",
     direction: "desc",
   });
-  const [unsubmittedData, setUnsubmittedData] = useState([
-    // {
-    //   appType: 'Study Permit Extension',
-    //   dateCreated: 'August 10, 2026',
-    //   daysLeft: '50 days',
-    //   dateSaved: 'August 18, 2026',
-    // },
-    // {
-    //   appType: 'Post-Graduation Work Permit (PGWP)',
-    //   dateCreated: 'August 01, 2026',
-    //   daysLeft: '41 days',
-    //   dateSaved: 'August 15, 2026',
-    // },
-  ]);
+  const [unsubmittedData, setUnsubmittedData] = useState([]);
+
+  useEffect(() => {
+    const fetchUserVisas = async () => {
+      const userId = user?._id || user?.id;
+      if (!userId || !token) return;
+
+      try {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/visas/user/${userId}`, {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        });
+        if (response.ok) {
+          const data = await response.json();
+          const visasArray = Array.isArray(data) ? data : (data?.visas || []);
+          
+          const mappedSubmitted = visasArray.map(visa => ({
+            appType: visa.visaType || visa.applicationType || 'Visa',
+            appNumber: visa.applicationNumber || visa.uci || '',
+            applicantName: `${visa.givenNames || ''} ${visa.familyName || ''}`.trim() || '',
+            dateSubmitted: visa.receiveDate || (visa.createdAt ? new Date(visa.createdAt).toLocaleDateString() : ''),
+            status: visa.latestUpdate?.status || 'Submitted',
+            messages: '0 message',
+            rawVisa: visa
+          }));
+          setSubmittedData(mappedSubmitted);
+        }
+      } catch (err) {
+        console.error("Error fetching visas for user:", err);
+      }
+    };
+
+    fetchUserVisas();
+  }, [user, token]);
+
+  const ownerName = submittedData.length > 0
+    ? submittedData[0].applicantName
+    : (user ? user.username : "");
+
+  const accountTitle = language === 'en' ? `${ownerName}'s account` : `Compte de ${ownerName}`;
 
   // Helper to render sort arrows
   const renderSortIndicator = (currentSort, colKey) => {
@@ -142,7 +149,7 @@ export default function MyCICHome() {
                   marginBottom: "10px",
                 }}
               >
-                BIKASH SINGH GAJMER's account
+                {accountTitle}
               </h1>
               <div
                 style={{
@@ -167,7 +174,7 @@ export default function MyCICHome() {
                     marginBottom: "6px",
                   }}
                 >
-                  View the applications you submitted
+                  {t('submittedAppsTitle')}
                 </h2>
                 <p
                   style={{
@@ -176,8 +183,7 @@ export default function MyCICHome() {
                     marginBottom: "15px",
                   }}
                 >
-                  Review, check the status or read messages about your submitted
-                  application.
+                  {t('submittedAppsDesc')}
                 </p>
               </div>
             </div>
@@ -202,7 +208,7 @@ export default function MyCICHome() {
                   htmlFor="submitted-search"
                   style={{ fontWeight: "bold", marginBottom: "0" }}
                 >
-                  Search:
+                  {t('searchLabel')}
                 </label>
                 <input
                   id="submitted-search"
@@ -224,16 +230,18 @@ export default function MyCICHome() {
                 style={{ display: "flex", alignItems: "center", gap: "6px" }}
               >
                 <span>
-                  Showing {filteredSubmitted.length === 0 ? 0 : 1} to{" "}
-                  {filteredSubmitted.length} of {filteredSubmitted.length}{" "}
-                  entries
+                  {t('showingEntries', {
+                    start: filteredSubmitted.length === 0 ? 0 : 1,
+                    end: filteredSubmitted.length,
+                    total: filteredSubmitted.length
+                  })}
                 </span>
                 <span style={{ margin: "0 4px", color: "#888" }}>|</span>
                 <label
                   htmlFor="submitted-entries"
                   style={{ fontWeight: "bold", marginBottom: "0" }}
                 >
-                  Show
+                  {t('showLabel')}
                 </label>
                 <select
                   id="submitted-entries"
@@ -255,7 +263,7 @@ export default function MyCICHome() {
                   <option value={25}>25</option>
                   <option value={50}>50</option>
                 </select>
-                <span>entries</span>
+                <span>{t('entriesLabel')}</span>
               </div>
             </div>
 
@@ -287,7 +295,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Application type{" "}
+                      {t('appType')}{" "}
                       {renderSortIndicator(submittedSort, "appType")}
                     </th>
                     <th
@@ -305,7 +313,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Application number{" "}
+                      {t('appNumber')}{" "}
                       {renderSortIndicator(submittedSort, "appNumber")}
                     </th>
                     <th
@@ -323,7 +331,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Applicant name{" "}
+                      {t('applicantName')}{" "}
                       {renderSortIndicator(submittedSort, "applicantName")}
                     </th>
                     <th
@@ -341,7 +349,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Date submitted{" "}
+                      {t('dateSubmitted')}{" "}
                       {renderSortIndicator(submittedSort, "dateSubmitted")}
                     </th>
                     <th
@@ -359,7 +367,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Current status{" "}
+                      {t('currentStatus')}{" "}
                       {renderSortIndicator(submittedSort, "status")}
                     </th>
                     <th
@@ -377,7 +385,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Messages {renderSortIndicator(submittedSort, "messages")}
+                      {t('messages')} {renderSortIndicator(submittedSort, "messages")}
                     </th>
                     <th
                       style={{
@@ -386,7 +394,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Action
+                      {t('action')}
                     </th>
                   </tr>
                 </thead>
@@ -402,7 +410,7 @@ export default function MyCICHome() {
                           borderBottom: "1px solid #ccc",
                         }}
                       >
-                        No data available in table
+                        {t('noDataText')}
                       </td>
                     </tr>
                   ) : (
@@ -459,12 +467,15 @@ export default function MyCICHome() {
                         <td style={{ padding: "8px 10px" }}>
                           <DelayedLink
                             to="/mycic/dashboard"
+                            onClick={() => {
+                              localStorage.setItem('selectedVisa', JSON.stringify(row.rawVisa));
+                            }}
                             style={{
                               color: "#284162",
                               textDecoration: "underline",
                             }}
                           >
-                            View full application status
+                            {t('viewFullStatus')}
                           </DelayedLink>
                         </td>
                       </tr>
@@ -475,14 +486,13 @@ export default function MyCICHome() {
             </div>
 
             <p style={{ marginTop: "10px", fontSize: "13px", color: "#333" }}>
-              Did you apply on paper or don't see your online application in
-              your account?{" "}
+              {t('didYouApplyPaper')}{" "}
               <DelayedLink
                 style={{ color: "#284162", textDecoration: "underline" }}
               >
-                Add (link) your application to your account
+                {t('addLinkApp')}
               </DelayedLink>{" "}
-              to access it and check your status online.
+              {t('toAccessIt')}
             </p>
           </section>
 
@@ -499,7 +509,7 @@ export default function MyCICHome() {
                     marginBottom: "6px",
                   }}
                 >
-                  Continue an application you haven't submitted
+                  {t('unsubmittedAppsTitle')}
                 </h2>
                 <p
                   style={{
@@ -508,8 +518,7 @@ export default function MyCICHome() {
                     marginBottom: "15px",
                   }}
                 >
-                  Continue working on an application or profile you haven't
-                  submitted or delete it from your account.
+                  {t('unsubmittedAppsDesc')}
                 </p>
               </div>
             </div>
@@ -534,7 +543,7 @@ export default function MyCICHome() {
                   htmlFor="unsubmitted-search"
                   style={{ fontWeight: "bold", marginBottom: "0" }}
                 >
-                  Search:
+                  {t('searchLabel')}
                 </label>
                 <input
                   id="unsubmitted-search"
@@ -556,16 +565,18 @@ export default function MyCICHome() {
                 style={{ display: "flex", alignItems: "center", gap: "6px" }}
               >
                 <span>
-                  Showing {filteredUnsubmitted.length === 0 ? 0 : 1} to{" "}
-                  {filteredUnsubmitted.length} of {filteredUnsubmitted.length}{" "}
-                  entries
+                  {t('showingEntries', {
+                    start: filteredUnsubmitted.length === 0 ? 0 : 1,
+                    end: filteredUnsubmitted.length,
+                    total: filteredUnsubmitted.length
+                  })}
                 </span>
                 <span style={{ margin: "0 4px", color: "#888" }}>|</span>
                 <label
                   htmlFor="unsubmitted-entries"
                   style={{ fontWeight: "bold", marginBottom: "0" }}
                 >
-                  Show
+                  {t('showLabel')}
                 </label>
                 <select
                   id="unsubmitted-entries"
@@ -587,7 +598,7 @@ export default function MyCICHome() {
                   <option value={25}>25</option>
                   <option value={50}>50</option>
                 </select>
-                <span>entries</span>
+                <span>{t('entriesLabel')}</span>
               </div>
             </div>
 
@@ -619,7 +630,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Application type{" "}
+                      {t('appType')}{" "}
                       {renderSortIndicator(unsubmittedSort, "appType")}
                     </th>
                     <th
@@ -637,7 +648,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Date Created{" "}
+                      {t('dateCreated')}{" "}
                       {renderSortIndicator(unsubmittedSort, "dateCreated")}
                     </th>
                     <th
@@ -655,7 +666,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Days left to submit{" "}
+                      {t('daysLeft')}{" "}
                       {renderSortIndicator(unsubmittedSort, "daysLeft")}
                     </th>
                     <th
@@ -673,7 +684,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Date last saved{" "}
+                      {t('dateLastSaved')}{" "}
                       {renderSortIndicator(unsubmittedSort, "dateSaved")}
                     </th>
                     <th
@@ -683,7 +694,7 @@ export default function MyCICHome() {
                         textAlign: "left",
                       }}
                     >
-                      Action
+                      {t('action')}
                     </th>
                   </tr>
                 </thead>
@@ -699,7 +710,7 @@ export default function MyCICHome() {
                           borderBottom: "1px solid #ccc",
                         }}
                       >
-                        No data available in table
+                        {t('noDataText')}
                       </td>
                     </tr>
                   ) : (
@@ -748,7 +759,7 @@ export default function MyCICHome() {
                               marginRight: "10px",
                             }}
                           >
-                            Continue
+                            {t('continue')}
                           </button>
                           <button
                             style={{
@@ -759,7 +770,7 @@ export default function MyCICHome() {
                               padding: 0,
                             }}
                           >
-                            Delete
+                            {t('delete')}
                           </button>
                         </td>
                       </tr>
@@ -783,7 +794,7 @@ export default function MyCICHome() {
                     marginBottom: "20px",
                   }}
                 >
-                  Start an application
+                  {t('startAppTitle')}
                 </h2>
               </div>
             </div>
@@ -805,7 +816,7 @@ export default function MyCICHome() {
                     lineHeight: "1.2",
                   }}
                 >
-                  Apply to come to Canada
+                  {t('applyToCome')}
                 </DelayedLink>
 
                 <p
@@ -816,9 +827,7 @@ export default function MyCICHome() {
                     lineHeight: "1.45",
                   }}
                 >
-                  Includes applications for visitor visas, work and study
-                  permits, Express Entry and International Experience Canada.
-                  You will need your personal reference code if you have one.
+                  {t('applyToComeDesc')}
                 </p>
               </div>
 
@@ -837,7 +846,7 @@ export default function MyCICHome() {
                     marginBottom: "6px",
                   }}
                 >
-                  Refugees: Apply for temporary health care benefits
+                  {t('refugeesTitle')}
                 </DelayedLink>
                 <p
                   style={{
@@ -847,9 +856,7 @@ export default function MyCICHome() {
                     lineHeight: "1.45",
                   }}
                 >
-                  Use this application if you are a protected person or refugee
-                  claimant who wants to apply for the Interim Federal Health
-                  Program.
+                  {t('refugeesDesc')}
                 </p>
               </div>
 
@@ -868,7 +875,7 @@ export default function MyCICHome() {
                     marginBottom: "6px",
                   }}
                 >
-                  Citizenship: Apply for a search or proof of citizenship
+                  {t('citizenshipTitle')}
                 </DelayedLink>
                 <p
                   style={{
@@ -878,8 +885,7 @@ export default function MyCICHome() {
                     lineHeight: "1.45",
                   }}
                 >
-                  Use this application to apply for proof of citizenship
-                  (citizenship certificate) or to search citizenship records.
+                  {t('citizenshipDesc')}
                 </p>
               </div>
             </div>

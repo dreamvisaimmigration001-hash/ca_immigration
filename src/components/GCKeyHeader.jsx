@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import sigBlkEn from "../assets/sig-blk-en.svg";
+import { useTranslation } from "../context/LanguageContext";
 
 export default function GCKeyHeader({ breadcrumbs = [{ label: "Home", href: "/" }, { label: "My Account" }] }) {
+  const { language, toggleLanguage, t } = useTranslation();
   return (
     <>
       <ul id="wb-tphp" className="wb-init wb-disable-inited">
@@ -30,8 +32,17 @@ export default function GCKeyHeader({ breadcrumbs = [{ label: "Home", href: "/" 
               <div className="col-md-12">
                 <ul className="list-inline margin-bottom-none">
                   <li>
-                    <a lang="fr" id="languageLink" href="/j/fra/l">
-                      Français
+                    <a
+                      lang={language === 'en' ? 'fr' : 'en'}
+                      id="languageLink"
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        toggleLanguage();
+                      }}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      {t('frLinkText')}
                     </a>
                   </li>
                 </ul>
