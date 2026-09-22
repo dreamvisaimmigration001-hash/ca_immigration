@@ -278,10 +278,7 @@ export default function MyCICDashboard() {
                   <div>
                     <strong>{t("appNumber")}:</strong> {appNumber}
                   </div>
-                  <div>
-                    <strong>{t("dateReceived")}:</strong>{" "}
-                    {visa?.receiveDate || "August, 14, 2026"}
-                  </div>
+
                   {visa?.biometricsNumber && (
                     <div style={{ marginTop: "10px" }}>
                       <strong>{t("biometrics")}:</strong>
