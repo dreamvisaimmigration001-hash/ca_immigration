@@ -13,7 +13,7 @@ export default function MyCICHome() {
   const [submittedSearch, setSubmittedSearch] = useState("");
   const [submittedEntriesPerPage, setSubmittedEntriesPerPage] = useState(5);
   const [submittedSort, setSubmittedSort] = useState({
-    column: "dateSubmitted",
+    column: "appNumber",
     direction: "desc",
   });
   const [submittedData, setSubmittedData] = useState([]);
@@ -334,24 +334,7 @@ export default function MyCICHome() {
                       {t('applicantName')}{" "}
                       {renderSortIndicator(submittedSort, "applicantName")}
                     </th>
-                    <th
-                      onClick={() => handleSubmittedSort("dateSubmitted")}
-                      style={{
-                        padding: "8px 10px",
-                        borderRight: "1px solid #ccc",
-                        cursor: "pointer",
-                        userSelect: "none",
-                        backgroundColor:
-                          submittedSort.column === "dateSubmitted"
-                            ? "#d9d9d9"
-                            : "#fff",
-                        fontWeight: "bold",
-                        textAlign: "left",
-                      }}
-                    >
-                      {t('dateSubmitted')}{" "}
-                      {renderSortIndicator(submittedSort, "dateSubmitted")}
-                    </th>
+
                     <th
                       onClick={() => handleSubmittedSort("status")}
                       style={{
@@ -402,7 +385,7 @@ export default function MyCICHome() {
                   {filteredSubmitted.length === 0 ? (
                     <tr>
                       <td
-                        colSpan={7}
+                        colSpan={6}
                         style={{
                           padding: "12px",
                           textAlign: "center",
@@ -440,14 +423,7 @@ export default function MyCICHome() {
                         >
                           {row.applicantName}
                         </td>
-                        <td
-                          style={{
-                            padding: "8px 10px",
-                            borderRight: "1px solid #eee",
-                          }}
-                        >
-                          {row.dateSubmitted}
-                        </td>
+
                         <td
                           style={{
                             padding: "8px 10px",
