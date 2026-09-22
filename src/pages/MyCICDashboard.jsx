@@ -282,7 +282,7 @@ export default function MyCICDashboard() {
                     <strong>{t("dateReceived")}:</strong>{" "}
                     {visa?.receiveDate || "August, 14, 2026"}
                   </div>
-                  {visa?.dateOfBiometricsEnrolment && (
+                  {visa?.biometricsNumber && (
                     <div style={{ marginTop: "10px" }}>
                       <strong>{t("biometrics")}:</strong>
                       <ul
@@ -294,11 +294,11 @@ export default function MyCICDashboard() {
                       >
                         <li>
                           <strong>{t("biometricsNum")}:</strong>{" "}
-                          {visa?.biometricsNumber || "1000025187767"}
+                          {visa?.biometricsNumber}
                         </li>
                         <li>
                           <strong>{t("biometricsEnrolDate")}:</strong>{" "}
-                          {visa?.dateOfBiometricsEnrolment || "March 24, 2026"}
+                          {visa?.dateOfBiometricsEnrolment}
                         </li>
                         <li>
                           <strong>{t("expiryDate")}:</strong>{" "}
