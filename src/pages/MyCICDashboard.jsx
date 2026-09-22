@@ -282,7 +282,7 @@ export default function MyCICDashboard() {
                     <strong>{t("dateReceived")}:</strong>{" "}
                     {visa?.receiveDate || "August, 14, 2026"}
                   </div>
-                  {/* {visa?.dateOfBiometricsEnrolment && (
+                  {visa?.dateOfBiometricsEnrolment && (
                     <div style={{ marginTop: "10px" }}>
                       <strong>{t("biometrics")}:</strong>
                       <ul
@@ -306,7 +306,7 @@ export default function MyCICDashboard() {
                         </li>
                       </ul>
                     </div>
-                  )} */}
+                  )}
                 </div>
               </div>
             </div>
@@ -390,54 +390,60 @@ export default function MyCICDashboard() {
               </div>
 
               {/* 2. Review of medical results */}
-              <div style={{ marginBottom: "20px" }}>
-                <div
-                  style={{ display: "flex", alignItems: "center", gap: "8px" }}
-                >
-                  <FilePlus size={22} style={{ color: "#26374a" }} />
-                  <h3
+              {visa?.medicalExaminationPassDate && (
+                <div style={{ marginBottom: "20px" }}>
+                  <div
                     style={{
-                      margin: 0,
-                      fontSize: "17px",
-                      fontWeight: "bold",
-                      color: "#26374a",
-                    }}
-                  >
-                    {t("reviewMedical")}
-                  </h3>
-                  <span
-                    style={{
-                      display: "inline-flex",
+                      display: "flex",
                       alignItems: "center",
-                      justifyContent: "center",
-                      backgroundColor: "#26374a",
-                      color: "#fff",
-                      borderRadius: "50%",
-                      width: "18px",
-                      height: "18px",
-                      fontSize: "12px",
-                      fontWeight: "bold",
-                      cursor: "pointer",
+                      gap: "8px",
                     }}
-                    title="Help on Review of medical results"
                   >
-                    ?
-                  </span>
+                    <FilePlus size={22} style={{ color: "#26374a" }} />
+                    <h3
+                      style={{
+                        margin: 0,
+                        fontSize: "17px",
+                        fontWeight: "bold",
+                        color: "#26374a",
+                      }}
+                    >
+                      {t("reviewMedical")}
+                    </h3>
+                    <span
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        backgroundColor: "#26374a",
+                        color: "#fff",
+                        borderRadius: "50%",
+                        width: "18px",
+                        height: "18px",
+                        fontSize: "12px",
+                        fontWeight: "bold",
+                        cursor: "pointer",
+                      }}
+                      title="Help on Review of medical results"
+                    >
+                      ?
+                    </span>
+                  </div>
+                  <ul
+                    style={{
+                      margin: "4px 0 0 0",
+                      paddingLeft: "46px",
+                      color: "#333",
+                      fontSize: "15px",
+                    }}
+                  >
+                    <li>
+                      {visa?.medicalExaminationPassDate || "March 24, 2026"}{" "}
+                      {t("medicalPassText")}
+                    </li>
+                  </ul>
                 </div>
-                <ul
-                  style={{
-                    margin: "4px 0 0 0",
-                    paddingLeft: "46px",
-                    color: "#333",
-                    fontSize: "15px",
-                  }}
-                >
-                  <li>
-                    {visa?.medicalExaminationPassDate || "March 24, 2026"}{" "}
-                    {t("medicalPassText")}
-                  </li>
-                </ul>
-              </div>
+              )}
 
               {/* 3. Review of additional documents */}
               <div style={{ marginBottom: "20px" }}>
