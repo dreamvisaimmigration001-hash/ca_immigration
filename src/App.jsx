@@ -61,10 +61,10 @@ function App() {
             path="immigration-refugees-citizenship/services/application/ircc-accounts"
             element={<IRCCAccount />}
           />
-          {/* <Route
+          <Route
             path="immigration-refugees-citizenship/services/application/account"
             element={<Account />}
-          /> */}
+          />
           <Route path="travel" element={<Travel />} />
           <Route path="business" element={<Business />} />
           <Route path="benefits" element={<Benefits />} />

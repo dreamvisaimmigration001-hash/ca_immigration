@@ -1,37 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { AlertCircle, Key, Landmark, UserPen } from 'lucide-react';
-import SEO from '../components/SEO';
+import React from "react";
+import { Link } from "react-router-dom";
+import { AlertCircle, Key, Landmark, UserPen } from "lucide-react";
+import SEO from "../components/SEO";
 
 export default function Account() {
   return (
-    <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
+    <main
+      property="mainContentOfPage"
+      resource="#wb-main"
+      typeof="WebPageElement"
+    >
       <SEO
         title="IRCC secure account : Sign in"
         description="Sign in or register for an IRCC secure account using GCKey or Sign-In Partner to apply online, check application status, and submit documents."
         keywords="IRCC secure account, sign in GCKey, Sign-In Partner, register IRCC account, Canada visa account"
       />
-      {/* Breadcrumb */}
-      {/* <nav id="wb-bc" property="breadcrumb">
-        <h2 className="wb-inv">You are here:</h2>
-        <div className="container">
-          <ol className="breadcrumb">
-            <li><a href="/en">Canada.ca</a></li>
-            <li><a href="/immigration-citizenship">Immigration and citizenship</a></li>
-            <li><a href="/immigration-refugees-citizenship/services/application">Your IRCC application</a></li>
-          </ol>
-        </div>
-      </nav> */}
 
       {/* ── Section 1: Page title + intro ── */}
       <div className="mwsgeneric-base-html parbase section">
         <div className="container">
-          <h1 property="name" id="wb-cont" dir="ltr">
-            <span className="stacked">
-              <span>IRCC secure account</span>
-              {" : "}
-              <span>Sign in</span>
+          <h1 property="name" id="wb-cont" dir="ltr" style={{ borderBottom: "none" }}>
+            <span style={{ display: "block", fontSize: "0.65em", color: "#555", fontWeight: "normal", marginBottom: "0.2em" }}>
+              Sign in
             </span>
+            <span style={{ display: "block" }}>
+              IRCC secure account
+            </span>
+            <span style={{ display: "block", width: "45px", borderBottom: "4px solid #af3c43", marginTop: "12px" }}></span>
           </h1>
 
           <p>We have different accounts for some applications.</p>
@@ -214,10 +209,15 @@ export default function Account() {
 
       {/* ── Section 2: Alerts ── */}
       <div className="mwsgeneric-base-html parbase section">
-        <div id="alerts">
+        <div id="alerts" tabIndex="-1">
           <section className="brdr-0 mrgn-bttm-0 infobg">
             <div className="container">
               <h2 className="wb-inv">Alerts</h2>
+              <div className="row mrgn-tp-md hidden-md hidden-lg">
+                <div className="text-center">
+                  <AlertCircle size={32} aria-hidden="true" />
+                </div>
+              </div>
               <div className="row mrgn-tp-md d-flex align-items-center">
                 <div className="col-md-1 col-xs-12 hidden-xs hidden-sm">
                   <div className="text-center">
@@ -1236,23 +1236,23 @@ export default function Account() {
         <h2 className="wb-inv">Page details</h2>
         <div className="row">
           <div className="col-sm-8 col-md-9 col-lg-9">
-            <div className="well mrgn-bttm-0">
-              <h3>Did you find what you were looking for?</h3>
-              <div>
-                <button className="btn btn-primary">Yes</button>
-                <button className="btn btn-primary mrgn-lft-sm">No</button>
-              </div>
-            </div>
+            <section className="well mrgn-bttm-0">
+              <h3 className="wb-inv">Give feedback about this page</h3>
+              <fieldset className="gc-pft-btns chkbxrdio-grp row row-no-gutters d-sm-flex flex-sm-wrap align-items-sm-center">
+                <legend className="col-xs-12 col-sm-7 col-md-9 col-lg-8 text-center text-sm-left mrgn-tp-sm pr-sm-3">
+                  <span className="field-name">
+                    Did you find what you were looking for?
+                  </span>
+                </legend>
+                <div className="col-xs-12 col-sm-5 col-md-3 col-lg-4 text-center text-sm-right">
+                  <button className="btn btn-primary">Yes</button>
+                  <button className="btn btn-primary mrgn-lft-sm">No</button>
+                </div>
+              </fieldset>
+            </section>
           </div>
         </div>
-        <div className="row mrgn-tp-md">
-          <div className="col-xs-12">
-            <p className="mrgn-bttm-0">
-              <span className="small">Date modified: </span>
-              <strong className="small">2026-08-11</strong>
-            </p>
-          </div>
-        </div>
+        <gcds-date-modified className="hydrated">2026-08-11</gcds-date-modified>
       </section>
     </main>
   );

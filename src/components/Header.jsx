@@ -1,13 +1,13 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Search, ChevronDown } from 'lucide-react';
-import GlobalMenu from './GlobalMenu';
-import Breadcrumb from './Breadcrumb';
-import { useTranslation } from '../context/LanguageContext';
+import { Link, useLocation } from "react-router-dom";
+import { Search, ChevronDown } from "lucide-react";
+import GlobalMenu from "./GlobalMenu";
+import Breadcrumb from "./Breadcrumb";
+import { useTranslation } from "../context/LanguageContext";
 
 export default function Header() {
   const { language, toggleLanguage, t } = useTranslation();
   const { pathname } = useLocation();
-  
+
   return (
     <div className="root">
       <div className="cmp-container">
@@ -62,14 +62,19 @@ export default function Header() {
                                         e.preventDefault();
                                         toggleLanguage();
                                       }}
-                                      style={{ cursor: 'pointer', color: '#284162' }}
+                                      style={{
+                                        cursor: "pointer",
+                                        color: "#284162",
+                                      }}
                                     >
-                                      <span className="hidden-xs">{t('frLinkText')}</span>
+                                      <span className="hidden-xs">
+                                        {t("frLinkText")}
+                                      </span>
                                       <abbr
-                                        title={t('frLinkText')}
+                                        title={t("frLinkText")}
                                         className="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"
                                       >
-                                        {language === 'en' ? 'fr' : 'en'}
+                                        {language === "en" ? "fr" : "en"}
                                       </abbr>
                                     </a>
                                   </li>
@@ -86,7 +91,7 @@ export default function Header() {
                             <Link to="/" property="url">
                               <img
                                 src="/assets/sig-blk-en.svg"
-                                alt={t('govOfCanada')}
+                                alt={t("govOfCanada")}
                                 property="logo"
                               />
                               <span className="wb-inv">
@@ -102,10 +107,7 @@ export default function Header() {
                               typeof="Country"
                               content="Canada"
                             />
-                            <link
-                              property="logo"
-                              href="/assets/wmms-blk.svg"
-                            />
+                            <link property="logo" href="/assets/wmms-blk.svg" />
                           </div>
                           <section
                             id="wb-srch"
@@ -150,61 +152,128 @@ export default function Header() {
                           </section>
                         </div>
                       </div>
-                      <hr />
+                      <div style={{ borderBottom: "3px solid #243850" }} />
 
-                      {pathname.includes('/services') || pathname.includes('/immigration-citizenship') ? (
-                        <div className="container">
-                          <div className="row">
-                            <div className="col-md-8">
-                              <GlobalMenu />
-                            </div>
-                            <div className="col-xs-offset-6 col-xs-6 col-md-offset-0 col-md-4">
-                              <section id="wb-so">
-                                <h2 className="wb-inv">Sign in</h2>
-                                <Link
-                                  className="btn btn-primary"
-                                  to="/immigration-refugees-citizenship/services/application/ircc-accounts"
-                                >
-                                  <span className="visible-xs">IRCC sign in</span>
-                                  <span className="hidden-xs">IRCC sign in</span>
-                                </Link>
-                              </section>
-                            </div>
-                          </div>
-                        </div>
-                      ) : (
-                        <div className="container">
-                          <div className="row">
-                            <div className="col-xs-12">
-                              <section id="wb-so">
-                                <h2 className="wb-inv">Sign in</h2>
-                                <Link
-                                  className="btn btn-primary"
-                                  to="/immigration-refugees-citizenship/services/application/ircc-accounts"
-                                >
-                                  <span className="visible-xs">IRCC sign in</span>
-                                  <span className="hidden-xs">IRCC sign in</span>
-                                </Link>
-                              </section>
-                            </div>
-                          </div>
-                        </div>
-                      )}
+                      {(() => {
+                        const isAccountPage =
+                          pathname === "/" ||
+                          pathname ===
+                            "/immigration-refugees-citizenship/services/application/account";
+                        const isServicePage =
+                          pathname.includes("/services") ||
+                          pathname.includes("/immigration-citizenship");
 
-                      {pathname.includes('/services') || pathname.includes('/immigration-citizenship') ? (
-                        <Breadcrumb />
-                      ) : (
-                        <nav id="wb-bc" property="breadcrumb">
-                          <h2 className="wb-inv">You are here:</h2>
-                          <div className="container">
-                            <ol className="breadcrumb">
-                              <li>
-                                <Link to="/">Canada.ca</Link>
-                              </li>
-                            </ol>
-                          </div>
-                        </nav>
-                      )}
+                        if (isAccountPage) {
+                          return (
+                            <div className="container">
+                              <div className="row">
+                                <div className="col-md-8">
+                                  <GlobalMenu />
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        } else if (isServicePage) {
+                          return (
+                            <div className="container">
+                              <div className="row">
+                                <div className="col-md-8">
+                                  <GlobalMenu />
+                                </div>
+                                <div className="col-xs-offset-6 col-xs-6 col-md-offset-0 col-md-4">
+                                  <section id="wb-so">
+                                    <h2 className="wb-inv">Sign in</h2>
+                                    <Link
+                                      className="btn btn-primary"
+                                      to="/immigration-refugees-citizenship/services/application/ircc-accounts"
+                                    >
+                                      <span className="visible-xs">
+                                        IRCC sign in
+                                      </span>
+                                      <span className="hidden-xs">
+                                        IRCC sign in
+                                      </span>
+                                    </Link>
+                                  </section>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        } else {
+                          return (
+                            <div className="container">
+                              <div className="row">
+                                <div className="col-xs-12">
+                                  <section id="wb-so">
+                                    <h2 className="wb-inv">Sign in</h2>
+                                    <Link
+                                      className="btn btn-primary"
+                                      to="/immigration-refugees-citizenship/services/application/ircc-accounts"
+                                    >
+                                      <span className="visible-xs">
+                                        IRCC sign in
+                                      </span>
+                                      <span className="hidden-xs">
+                                        IRCC sign in
+                                      </span>
+                                    </Link>
+                                  </section>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        }
+                      })()}
+
+                      {(() => {
+                        const isAccountPage =
+                          pathname === "/" ||
+                          pathname ===
+                            "/immigration-refugees-citizenship/services/application/account";
+                        const isServicePage =
+                          pathname.includes("/services") ||
+                          pathname.includes("/immigration-citizenship");
+
+                        if (isAccountPage) {
+                          return (
+                            <nav id="wb-bc" property="breadcrumb">
+                              <h2 className="wb-inv">You are here:</h2>
+                              <div className="container">
+                                <ol className="breadcrumb">
+                                  <li>
+                                    <Link to="/">Canada.ca</Link>
+                                  </li>
+                                  <li>
+                                    <Link to="/immigration-citizenship">
+                                      Immigration and citizenship
+                                    </Link>
+                                  </li>
+                                  <li>
+                                    <Link to="/immigration-refugees-citizenship/services/application">
+                                      Your IRCC application
+                                    </Link>
+                                  </li>
+                                </ol>
+                              </div>
+                            </nav>
+                          );
+                        } else if (isServicePage) {
+                          return <Breadcrumb />;
+                        } else {
+                          return (
+                            <nav id="wb-bc" property="breadcrumb">
+                              <h2 className="wb-inv">You are here:</h2>
+                              <div className="container">
+                                <ol className="breadcrumb">
+                                  <li>
+                                    <Link to="/">Canada.ca</Link>
+                                  </li>
+                                </ol>
+                              </div>
+                            </nav>
+                          );
+                        }
+                      })()}
                     </header>
                   </div>
                 </div>
