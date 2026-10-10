@@ -19,13 +19,16 @@ export default function GCKeyLogin() {
     setShowError(false);
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/auth/login`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/auth/login`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, password }),
         },
-        body: JSON.stringify({ username, password }),
-      });
+      );
 
       if (response.ok) {
         const data = await response.json();
@@ -34,7 +37,10 @@ export default function GCKeyLogin() {
         }
         if (data.user && data.user.role === "admin") {
           navigate("/admin");
-        } else if (data.user && (data.user.role === "employe" || data.user.role === "employee")) {
+        } else if (
+          data.user &&
+          (data.user.role === "employe" || data.user.role === "employee")
+        ) {
           navigate("/employee");
         } else {
           navigate("/mycic/home");
@@ -74,7 +80,7 @@ export default function GCKeyLogin() {
       />
       <div className="row">
         <div className="col-xs-12">
-          <h1 id="wb-cont">{t('welcomeGCKey')}</h1>
+          <h1 id="wb-cont">{t("welcomeGCKey")}</h1>
           {showError && (
             <div className="row col-md-8">
               <div id="errors-login" role="alert" tabIndex="-1">
@@ -124,7 +130,9 @@ export default function GCKeyLogin() {
                 <div className="row">
                   <div className="wb-sec hidden-md hidden-lg col-xs-12">
                     <div className="col-xs-12">
-                      <h2 style={{ marginTop: "0" }}>{t('simpleSecureAccess')}</h2>
+                      <h2 style={{ marginTop: "0" }}>
+                        {t("simpleSecureAccess")}
+                      </h2>
                       <p>
                         A simple way to securely access Government of Canada
                         online services.
@@ -150,7 +158,7 @@ export default function GCKeyLogin() {
                   </div>
                   <div id="left-box" className="col-md-8 col-xs-12">
                     <div className="col-xs-12">
-                      <h2 style={{ marginTop: "0" }}>{t('signInBtn')}</h2>
+                      <h2 style={{ marginTop: "0" }}>{t("signInBtn")}</h2>
                     </div>
                     <div className="col-xs-12">
                       <form
@@ -162,7 +170,7 @@ export default function GCKeyLogin() {
                         <div className="form-group">
                           <label htmlFor="token1">
                             <span className="field-name">
-                              {t('username')}: <strong>(required)</strong>
+                              {t("username")}: <strong>(required)</strong>
                             </span>
                           </label>
 
@@ -188,7 +196,7 @@ export default function GCKeyLogin() {
                         <div className="form-group">
                           <label htmlFor="token2">
                             <span className="field-name">
-                              {t('password')}: <strong>(required)</strong>
+                              {t("password")}: <strong>(required)</strong>
                             </span>
                           </label>
 
@@ -238,7 +246,7 @@ export default function GCKeyLogin() {
                                   Signing In...
                                 </span>
                               ) : (
-                                t('signInBtn')
+                                t("signInBtn")
                               )}
                             </button>
                             <button
@@ -252,7 +260,7 @@ export default function GCKeyLogin() {
                                 marginRight: "auto",
                               }}
                             >
-                              {t('clearBtn')}
+                              {t("clearBtn")}
                             </button>
                             <Link
                               to="/j/eng/rg"
@@ -289,7 +297,7 @@ export default function GCKeyLogin() {
                     <div className="col-xs-12 text-center">
                       <Link
                         className="mrgn-tp-sm visible-xs-block visible-sm-block visible-md-inline visible-lg-inline"
-                        to="/fu"
+                        to="/"
                         id="forgotUsernameLink"
                         title="Forgot your username?"
                       >
@@ -300,7 +308,7 @@ export default function GCKeyLogin() {
                       </span>
                       <Link
                         className="mrgn-tp-sm visible-xs-block visible-sm-block visible-md-inline visible-lg-inline"
-                        to="/fp"
+                        to="/"
                         id="forgotPasswordLink"
                         title="Forgot your password? Reset it here."
                       >
@@ -368,8 +376,8 @@ export default function GCKeyLogin() {
                 </p>
                 <form autoComplete="off" onSubmit={handleExitSubmit}>
                   <div className="form-buttons" style={{ textAlign: "center" }}>
-                    <button
-                      type="submit"
+                    <Link
+                      to="/"
                       className="btn btn-default cancel"
                       title="Exit the GCKey service"
                       id="Exit"
@@ -379,7 +387,7 @@ export default function GCKeyLogin() {
                       }}
                     >
                       Exit
-                    </button>
+                    </Link>
                   </div>
                 </form>
               </div>

@@ -685,7 +685,7 @@ export default function MyCICDashboard() {
                 >
                   <li>
                     {visa?.latestUpdate?.date || "August 14, 2026"}{" "}
-                    {t("finalDecisionText")}
+                    {t(visa?.latestUpdate?.content)}
                   </li>
                 </ul>
               </div>
