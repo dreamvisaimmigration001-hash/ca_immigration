@@ -273,37 +273,35 @@ export default function MyCICDashboard() {
                     <strong>{t("principalApplicant")}:</strong> {applicantName}
                   </div>
                   <div>
-                    <strong>{t("uci")}:</strong> {visa?.uci || "11-4897-0335"}
+                    <strong>{t("uci")}:</strong> {visa?.uci}
                   </div>
                   <div>
                     <strong>{t("appNumber")}:</strong> {appNumber}
                   </div>
 
-                  {visa?.biometricsNumber && (
-                    <div style={{ marginTop: "10px" }}>
-                      <strong>{t("biometrics")}:</strong>
-                      <ul
-                        style={{
-                          margin: "4px 0 0 0",
-                          paddingLeft: "22px",
-                          color: "#333",
-                        }}
-                      >
-                        <li>
-                          <strong>{t("biometricsNum")}:</strong>{" "}
-                          {visa?.biometricsNumber}
-                        </li>
-                        <li>
-                          <strong>{t("biometricsEnrolDate")}:</strong>{" "}
-                          {visa?.dateOfBiometricsEnrolment}
-                        </li>
-                        <li>
-                          <strong>{t("expiryDate")}:</strong>{" "}
-                          {visa?.biometricsExpiryDate || "TBD"}
-                        </li>
-                      </ul>
-                    </div>
-                  )}
+                  <div style={{ marginTop: "10px" }}>
+                    <strong>{t("biometrics")}:</strong>
+                    <ul
+                      style={{
+                        margin: "4px 0 0 0",
+                        paddingLeft: "22px",
+                        color: "#333",
+                      }}
+                    >
+                      <li>
+                        <strong>{t("biometricsNum")}:</strong>{" "}
+                        {visa?.biometricsNumber}
+                      </li>
+                      <li>
+                        <strong>{t("biometricsEnrolDate")}:</strong>{" "}
+                        {visa?.dateOfBiometricsEnrolment}
+                      </li>
+                      <li>
+                        <strong>{t("expiryDate")}:</strong>{" "}
+                        {visa?.biometricsExpiryDate}
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
